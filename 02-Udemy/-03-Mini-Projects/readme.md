@@ -2,7 +2,8 @@
 
 |  #  |                                                     Project                                                     |                                 Live Demo                                  |
 | :-: | :-------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------: |
-| 01  |         [Form Validator]([https://github.com/bradtraversy/vanillawebprojects/tree/master/form-validator](https://github.com/AhmedKhalafallah1999/Kalbonyan--Elmarsos/tree/main/02-Udemy/-03-Mini-Projects/form-validator-App))         |    [Live Demo](https://github.com/AhmedKhalafallah1999/Kalbonyan--Elmarsos/tree/main/02-Udemy/-03-Mini-Projects/form-validator-App)    |
+| 01  |         [Form Validator](https://github.com/AhmedKhalafallah1999/Kalbonyan--Elmarsos/tree/main/02-Udemy/-03-Mini-Projects/form-validator-App)       
+| [Live Demo](https://vanillawebprojects.com/projects/form-validator/)  |
 | 02  |     [Movie Seat Booking](https://github.com/bradtraversy/vanillawebprojects/tree/master/movie-seat-booking)     |  [Live Demo](https://vanillawebprojects.com/projects/movie-seat-booking/)  |
 | 03  |    [Custom Video Player](https://github.com/bradtraversy/vanillawebprojects/tree/master/custom-video-player)    | [Live Demo](https://vanillawebprojects.com/projects/custom-video-player/)  |
 | 04  |    [Exchange Rate Calculator](https://github.com/bradtraversy/vanillawebprojects/tree/master/exchange-rate)     |    [Live Demo](https://vanillawebprojects.com/projects/exchange-rate/)     |
