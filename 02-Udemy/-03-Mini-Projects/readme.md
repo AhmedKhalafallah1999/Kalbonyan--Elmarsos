@@ -7,9 +7,9 @@
 | 03  |    [Custom Video Player](https://github.com/bradtraversy/vanillawebprojects/tree/master/custom-video-player)    | [Live Demo](https://vanillawebprojects.com/projects/custom-video-player/)  |
 | 04  |    [Exchange Rate Calculator](https://github.com/bradtraversy/vanillawebprojects/tree/master/exchange-rate)     |    [Live Demo](https://vanillawebprojects.com/projects/exchange-rate/)     |
 | 05  |  [DOM Array Methods Project](https://github.com/bradtraversy/vanillawebprojects/tree/master/dom-array-methods)  |  [Live Demo](https://vanillawebprojects.com/projects/dom-array-methods/)   |
-| 06  |     [Menu Slider & Modal](https://github.com/bradtraversy/vanillawebprojects/tree/master/modal-menu-slider)     |  [Live Demo](https://vanillawebprojects.com/projects/modal-menu-slider/)   |
-| 07  |             [Hangman Game](https://github.com/bradtraversy/vanillawebprojects/tree/master/hangman)              |       [Live Demo](https://vanillawebprojects.com/projects/hangman/)        |
-| 08  |          [Mealfinder App](https://github.com/bradtraversy/vanillawebprojects/tree/master/meal-finder)           |     [Live Demo](https://vanillawebprojects.com/projects/meal-finder/)      |
+| 06  |     [Menu Slider & Modal](https://github.com/bradtraversy/vanillawebprojects/tree/master/modal-menu-slider)                            |  [Live Demo](https://vanillawebprojects.com/projects/modal-menu-slider/)   |
+| 07  |             [Hangman Game](https://github.com/bradtraversy/vanillawebprojects/tree/master/hangman)                                      |       [Live Demo](https://vanillawebprojects.com/projects/hangman/)        |
+| 08  |          [Mealfinder App](https://github.com/bradtraversy/vanillawebprojects/tree/master/meal-finder)                                     |     [Live Demo](https://vanillawebprojects.com/projects/meal-finder/)      |
 | 09  |        [Expense Tracker](https://github.com/bradtraversy/vanillawebprojects/tree/master/expense-tracker)        |   [Live Demo](https://vanillawebprojects.com/projects/expense-tracker/)    |
 | 10  |           [Music Player](https://github.com/bradtraversy/vanillawebprojects/tree/master/music-player)           |     [Live Demo](https://vanillawebprojects.com/projects/music-player/)     |
 | 11  |    [Infinite Scrolling](https://github.com/bradtraversy/vanillawebprojects/tree/master/infinite_scroll_blog)    | [Live Demo](https://vanillawebprojects.com/projects/infinite_scroll_blog/) |
