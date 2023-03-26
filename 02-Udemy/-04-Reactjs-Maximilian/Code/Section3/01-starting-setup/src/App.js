@@ -1,5 +1,8 @@
-import ExpenesItem from "./components/ExpenseItem";
-import Card  from "./components/Card";
+import ExpenesItem from "./components/Expenses/ExpenseItem";
+import Card from "./components/UI/Card";
+// we can neglect this line if you use JSX but you have to add in all pages
+// import react from "react";
+
 function App() {
   // const para = document.createElement("p");
   // para.textContent = "This is visible";
