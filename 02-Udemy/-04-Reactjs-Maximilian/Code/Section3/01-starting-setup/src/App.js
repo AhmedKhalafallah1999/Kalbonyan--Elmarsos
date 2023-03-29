@@ -1,5 +1,6 @@
 import ExpenesItem from "./components/Expenses/ExpenseItem";
 import Card from "./components/UI/Card";
+import NewExpense from "./components/NewExpense/NewExpense";
 // we can neglect this line if you use JSX but you have to add in all pages
 // import react from "react";
 
@@ -28,8 +29,13 @@ function App() {
       date: new Date(2021, 5, 12),
     },
   ];
+  const addExpenseHandler = (expense) => {
+    console.log("arrived");
+    console.log(expense);
+  };
   return (
     <Card>
+      <NewExpense onAddExpense={addExpenseHandler}></NewExpense>
       {/* <h2>Let's get started!</h2> */}
       {/* <p>This is also visible!</p> */}
       <ExpenesItem
