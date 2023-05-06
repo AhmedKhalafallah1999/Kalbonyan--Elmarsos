@@ -17,3 +17,13 @@
 .tesla-model img{
  max-width: 100%;
 }
+.tesla-model button{
+  background: none;
+  outline: none;
+  border-radius: 9px;
+  border-color: white;
+  display: flex;
+  align-items: center;
+  right: 0;
+
+}

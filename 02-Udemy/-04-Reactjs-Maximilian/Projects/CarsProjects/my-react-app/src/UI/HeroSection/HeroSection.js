@@ -1,11 +1,12 @@
 import "./HeroSection.css";
-import background from "./Background1.png";
+// import background from "./Background1.png";
 import { BsArrowUpRight } from "react-icons/bs";
+import Header from "../Header/header";
 const HeroSection = () => {
   return (
     <div className="heroSection">
-      
-      <img src={background} alt="car Landing" />
+      <Header></Header>
+      {/* <img src={background} alt="car Landing" /> */}
       <div className="heading">
         <h1>Find the perfect car for you at YourCar.</h1>
         <p>

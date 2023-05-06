@@ -1,0 +1,58 @@
+.colum-footer {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  justify-content: space-between;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.colum-footer .your-car {
+  text-align: left;
+}
+.colum-footer h1 {
+  color: #741906;
+  font-weight: 600;
+  font-size: 24px;
+}
+.colum-footer .special-name {
+  font-size: 32px;
+  font-weight: 700;
+}
+.colum-footer .news-letter .subscribe {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.colum-footer .news-letter .subscribe input {
+  padding: 15px;
+}
+.colum-footer .news-letter .subscribe button {
+  background-color: #741906;
+  padding: 8px 18px;
+  font-size: 18px;
+  color: white;
+}
+.colum-footer .news-letter .social-icons {
+  /* display: flex; */
+  font-size: 30px;
+}
+.colum-footer .news-letter .social-icons .icon-social {
+  padding: 40px 20px 0;
+}
+.colum-footer .contact ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.colum-footer .contact li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  gap: 10px;
+}
+.copy-right{
+  border-top: 2px solid black;
+  text-align: center;
+
+}
