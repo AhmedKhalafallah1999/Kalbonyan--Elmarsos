@@ -1,0 +1,7 @@
+.logos-section {
+  /* background-color: #e5e5e5; */
+}
+.logos {
+  display: flex;
+  justify-content: space-between;
+}

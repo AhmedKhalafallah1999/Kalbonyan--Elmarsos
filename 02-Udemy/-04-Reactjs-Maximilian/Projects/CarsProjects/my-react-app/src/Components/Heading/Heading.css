@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap");
+.special-heading {
+  /* background-color: #e5e5e5; */
+  position: relative;
+}
+.special-heading h1 {
+  color: #ccc;
+  font-family: "Lora", serif;
+  font-size: 128px;
+  font-weight: 700;
+}
+.special-heading h5 {
+  color: #741906;
+  font-size: 56px;
+  font-family: "Lora", serif;
+  position: absolute;
+  top: 0;
+  left: 2%;
+}

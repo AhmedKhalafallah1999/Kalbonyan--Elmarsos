@@ -1,0 +1,22 @@
+.services-section {
+  background-image: url("./services.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.services-card {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  /* column-gap: 80px; */
+  gap: 60px;
+  justify-content: space-between;
+}
+.services-section h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.services-section p {
+  font-size: 20px;
+  width: 400px;
+}

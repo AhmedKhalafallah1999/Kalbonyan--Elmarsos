@@ -1,0 +1,19 @@
+.Gallery {
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+}
+.tesla-model {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 40%;
+  left: 40%;
+  color: white;
+  text-align: center;
+  align-items: center;
+  /* justify-content: center; */
+}
+.tesla-model img{
+ max-width: 100%;
+}

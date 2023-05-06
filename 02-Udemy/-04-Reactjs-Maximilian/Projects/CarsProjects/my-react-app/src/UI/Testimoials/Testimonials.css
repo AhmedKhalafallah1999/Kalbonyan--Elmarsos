@@ -1,0 +1,32 @@
+.testimonials-section {
+  background-color: #12273d;
+  position: relative;
+  height: 100vh;
+}
+.dataFetching {
+  background-color: white;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 846px;
+  left: 25%;
+  text-align: center;
+  /* padding: 57px 135px; */
+  padding: 60px 0;
+}
+.dataFetching p {
+  /* width: 600px; */
+  padding: 0px 135px;
+}
+.dataFetching .signiture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+.dataFetching .signiture img {
+  position: absolute;
+  right: -10%;
+  bottom: -10%;
+  max-width: 200px;
+}
