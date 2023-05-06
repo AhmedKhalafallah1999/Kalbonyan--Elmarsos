@@ -31,6 +31,19 @@
   bottom: -10%;
   max-width: 200px;
 }
+.pointers {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+.point {
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  background-color: white;
+
+  margin: 3rem;
+}
 /**************************/
 /* BELOW 944px (Tablets) */
 /**************************/
@@ -54,7 +67,6 @@
     flex-direction: column;
     gap: 0;
   }
-
 }
 /**************************/
 /* BELOW 544px (Phones) */
@@ -69,5 +81,4 @@
     flex-direction: column;
     gap: 0;
   }
-  
 }

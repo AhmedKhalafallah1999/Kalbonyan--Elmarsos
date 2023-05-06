@@ -1,10 +1,9 @@
 import Heading from "../../Components/Heading/Heading";
 import "./Testimonials.css";
 import { AiOutlineStar } from "react-icons/ai";
-import TestimonialCar from "./testimonials.png";
+// import TestimonialCar from "./testimonials.png";
 import TestimonialsData from "../../data.json";
 const Testimonials = () => {
-  console.log(TestimonialsData.testimonials[0].name);
   return (
     <div className="testimonials-section">
       <Heading
