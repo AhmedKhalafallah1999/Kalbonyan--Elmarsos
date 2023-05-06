@@ -3,16 +3,18 @@
 .aboutUs-section {
   display: flex;
   justify-content: space-between;
-  gap: 50px;
+  gap: 5rem;
+  /* max-width: 100%; */
 }
 .aboutUs-section p {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 2rem;
+  line-height: 2.4rem;
   letter-spacing: 5%;
   font-family: "Lora", serif;
 }
 .aboutUs-section img {
-  margin-top: 200px;
+  margin-top: 20rem;
   background-position: center;
   background-size: cover;
+  /* max-width: 100%; */
 }

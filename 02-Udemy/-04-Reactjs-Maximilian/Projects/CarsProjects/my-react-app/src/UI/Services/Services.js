@@ -6,11 +6,11 @@ import icon3 from "./icon3.png";
 const Services = () => {
   return (
     <div className="services-section">
-      <div className="container  ">
-        <Heading h1={"SERVICES"} h5={"Services"}></Heading>
+      <div className="container">
+        <Heading h1={"SERVICES"} h5={"Services"} type={'services'}></Heading>
         <div className="services-card">
           <div>
-            <img src={icon1}  alt="icon"></img>
+            <img src={icon1} alt="icon"></img>
             <h2>Car sales</h2>
             <p>
               At YourCar, we offer a wide selection of luxury vehicles for sale.
@@ -19,7 +19,7 @@ const Services = () => {
             </p>
           </div>
           <div>
-            <img src={icon2}  alt="icon"></img>
+            <img src={icon2} alt="icon"></img>
             <h2>Car rental</h2>
             <p>
               If you're in need of a luxury car rental, look no further than

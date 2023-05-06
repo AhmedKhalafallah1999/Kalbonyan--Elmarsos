@@ -10,7 +10,7 @@ import car from "./gallery/Car.png";
 import rectangle from "./gallery/Rectangle2.png";
 const Gallery = () => {
   return (
-    <div className="Gallery">
+    <div className="Gallery container">
       <img src={car} alt="car" />
       <img src={car1} alt="car" />
       <img src={car2} alt="car" />

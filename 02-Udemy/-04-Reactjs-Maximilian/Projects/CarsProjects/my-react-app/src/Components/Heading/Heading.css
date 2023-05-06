@@ -4,16 +4,37 @@
   position: relative;
 }
 .special-heading h1 {
-  color: #ccc;
   font-family: "Lora", serif;
-  font-size: 128px;
+  font-size: 12.8rem;
   font-weight: 700;
 }
 .special-heading h5 {
-  color: #741906;
-  font-size: 56px;
+  font-size: 5.6rem;
   font-family: "Lora", serif;
   position: absolute;
   top: 0;
-  left: 2%;
+}
+.services h1 {
+  text-align: center;
+  color: #ccc;
+}
+.services h5 {
+  left: 40%;
+}
+.testimonials h1 {
+  text-align: center;
+  color: #ccc;
+  opacity: 0.3;
+}
+.testimonials h5 {
+  left: 40%;
+  color: white;
+}
+.aboutUs h1 {
+  text-align: center;
+  color: #ccc;
+}
+.aboutUs h5 {
+  left: 8%;
+  color: #741906;
 }

@@ -1,7 +1,13 @@
+/* .services-section:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, .6);
+} */
 .services-section {
   background-image: url("./services.png");
   background-size: cover;
   background-position: center;
+  width: 100%;
+  max-width: 100%;
   height: 100vh;
 }
 .services-card {
@@ -13,10 +19,10 @@
   justify-content: space-between;
 }
 .services-section h2 {
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 700;
 }
 .services-section p {
-  font-size: 20px;
-  width: 400px;
+  font-size: 2rem;
+  width: 40rem;
 }

@@ -5,7 +5,7 @@ const AboutUs = () => {
   return (
     <div className="container aboutUs-section">
       <div className="left-section">
-        <Heading h1={"ABOUT US"} h5={"About"}></Heading>
+        <Heading h1={"ABOUT US"} h5={"About"} type={'aboutUs'}></Heading>
         <p>
           YourCar is a luxury car dealership that offers a personalized and
           first-class experience to its clients. Our team of experienced

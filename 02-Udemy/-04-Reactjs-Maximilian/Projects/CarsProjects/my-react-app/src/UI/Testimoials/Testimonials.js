@@ -5,7 +5,7 @@ import TestimonialCar from './testimonials.png'
 const Testimonials = () => {
   return (
     <div className="testimonials-section">
-      <Heading h1={"TESTIMONIALS"} h5={"Testimonials"}></Heading>
+      <Heading h1={"TESTIMONIALS"} h5={"Testimonials"} type={'testimonials'}></Heading>
       <div className="dataFetching">
         <p>
           I recently bought a car through YourCar and I was blown away by their

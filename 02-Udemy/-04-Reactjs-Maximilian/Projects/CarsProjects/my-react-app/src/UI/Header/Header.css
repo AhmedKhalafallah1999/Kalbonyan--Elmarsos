@@ -3,10 +3,18 @@
   width: 1262px;
 }
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
-  height: 69px;
   align-items: center;
+  padding: 0 10%;
+  height: 7rem;
+  z-index: 10;
+ 
 }
 ul {
   display: flex;
@@ -17,10 +25,10 @@ a {
   color: white;
   text-decoration: none;
   padding: 10px;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
 }
 .icon {
-  width: 50.12px;
-  height: 43.71px;
+  width: 5rem;
+  height: 4rem;
 }
