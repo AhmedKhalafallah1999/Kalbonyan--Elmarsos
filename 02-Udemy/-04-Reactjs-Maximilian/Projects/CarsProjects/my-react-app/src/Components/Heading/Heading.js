@@ -3,9 +3,9 @@ const Heading = (props) => {
   let classPointer;
   if (props.type === "services") {
     classPointer = "special-heading services";
-  } else if (props.type === "aboutUs") {
+  } else if(props.type==='aboutUs'){
     classPointer = "special-heading aboutUs";
-  } else if (props.type === "testimonials") {
+  } else if (props.type==='testimonials'){
     classPointer = "special-heading testimonials";
   }
   return (

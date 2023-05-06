@@ -1,28 +1,29 @@
 .testimonials-section {
   background-color: #12273d;
-  position: relative;
   height: 100vh;
 }
 .dataFetching {
   background-color: white;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  width: 846px;
-  left: 25%;
+  position: relative;
+  width: 80rem;
   text-align: center;
-  /* padding: 57px 135px; */
-  padding: 60px 0;
+  padding: 6rem 0;
+  margin: auto;
 }
 .dataFetching p {
-  /* width: 600px; */
-  padding: 0px 135px;
+  padding: 0px 15rem;
+  font-size: 2rem;
 }
 .dataFetching .signiture {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 18px;
+  gap: 2.4rem;
+}
+.dataFetching .signiture span {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #ccc;
 }
 .dataFetching .signiture img {
   position: absolute;

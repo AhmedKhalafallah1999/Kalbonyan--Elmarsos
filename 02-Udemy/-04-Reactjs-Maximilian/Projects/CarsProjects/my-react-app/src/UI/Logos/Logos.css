@@ -1,7 +1,10 @@
 .logos-section {
-  /* background-color: #e5e5e5; */
+  background-color: #e5e5e5;
 }
 .logos {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 30vh;
+
 }

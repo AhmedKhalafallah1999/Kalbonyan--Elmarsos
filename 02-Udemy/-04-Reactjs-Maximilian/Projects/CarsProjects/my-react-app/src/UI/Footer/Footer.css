@@ -12,36 +12,40 @@
 .colum-footer h1 {
   color: #741906;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 .colum-footer .special-name {
-  font-size: 32px;
+  font-size: 3.2rem;
   font-weight: 700;
 }
 .colum-footer .news-letter .subscribe {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 3rem;
 }
 .colum-footer .news-letter .subscribe input {
-  padding: 15px;
+  padding: 1.5rem;
+  border: 1px solid #741906;
 }
 .colum-footer .news-letter .subscribe button {
   background-color: #741906;
-  padding: 8px 18px;
-  font-size: 18px;
+  padding: 0.8rem 1.8rem;
+  font-size: 1.8rem;
   color: white;
 }
 .colum-footer .news-letter .social-icons {
   /* display: flex; */
-  font-size: 30px;
+  font-size: 3rem;
 }
 .colum-footer .news-letter .social-icons .icon-social {
-  padding: 40px 20px 0;
+  padding: 4rem 2rem 0;
 }
 .colum-footer .contact ul {
   display: flex;
   flex-direction: column;
+}
+.colum-footer p {
+  font-size: 1.8rem;
 }
 
 .colum-footer .contact li {
@@ -49,10 +53,11 @@
   align-items: center;
   justify-content: center;
   text-align: left;
-  gap: 10px;
+  gap: 1rem;
+  font-size: 1.8rem;
 }
-.copy-right{
-  border-top: 2px solid black;
+.copy-right {
+  border-top: 0.2rem solid #741906;
   text-align: center;
-
+  font-size: 1.8rem;
 }

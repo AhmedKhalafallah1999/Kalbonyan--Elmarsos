@@ -5,10 +5,11 @@ const Header = () => {
   return (
     <div className="header container">
       <div>
-        <img src={logo} alt="jj" />
+        {/* <img src={logo} alt="jj" /> */}
+        <h1>Your<span>Car</span></h1>
       </div>
 
-      <ul>
+      <ul className="nav">
         <li>
           <a href={".."}>Home</a>
         </li>

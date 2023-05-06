@@ -3,9 +3,10 @@ import AboutUsCar from "./aboutUs.png";
 import "./AboutUs.css";
 const AboutUs = () => {
   return (
-    <div className="container aboutUs-section">
+    <div className="container ">
+      <Heading h1={"ABOUT US"} h5={"About"} type={"aboutUs"}></Heading>
+    <div className="aboutUs-section">
       <div className="left-section">
-        <Heading h1={"ABOUT US"} h5={"About"} type={'aboutUs'}></Heading>
         <p>
           YourCar is a luxury car dealership that offers a personalized and
           first-class experience to its clients. Our team of experienced
@@ -28,6 +29,7 @@ const AboutUs = () => {
       </div>
       <div>
         <img src={AboutUsCar} alt="car"></img>
+      </div>
       </div>
     </div>
   );

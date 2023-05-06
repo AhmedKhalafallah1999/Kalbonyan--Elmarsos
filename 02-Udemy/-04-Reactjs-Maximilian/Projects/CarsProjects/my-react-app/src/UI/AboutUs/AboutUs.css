@@ -4,7 +4,6 @@
   display: flex;
   justify-content: space-between;
   gap: 5rem;
-  /* max-width: 100%; */
 }
 .aboutUs-section p {
   font-size: 2rem;
@@ -13,8 +12,36 @@
   font-family: "Lora", serif;
 }
 .aboutUs-section img {
-  margin-top: 20rem;
+  margin-top: -10rem;
   background-position: center;
   background-size: cover;
-  /* max-width: 100%; */
+}
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (min-width: 44em) and (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+}
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (min-width: 34em) and (max-width: 44em) {
+}
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .aboutUs-section img{
+    display: none;
+  }
+  .aboutUs-section {
+    align-items: center;
+  }
+  
 }

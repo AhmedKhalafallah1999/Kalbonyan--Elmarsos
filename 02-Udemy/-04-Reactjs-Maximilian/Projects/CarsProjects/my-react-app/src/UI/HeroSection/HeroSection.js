@@ -1,5 +1,4 @@
 import "./HeroSection.css";
-// import background from "./Background1.png";
 import { BsArrowUpRight } from "react-icons/bs";
 import Header from "../Header/header";
 const HeroSection = () => {

@@ -22,7 +22,7 @@ const Testimonials = () => {
         </div>
         <div className="signiture">
           <h1>Annie Rudy</h1>
-          <h3>Las Vegas</h3>
+          <span>Las Vegas</span>
           <img src={TestimonialCar} alt="car-test"></img>
         </div>
       </div>
