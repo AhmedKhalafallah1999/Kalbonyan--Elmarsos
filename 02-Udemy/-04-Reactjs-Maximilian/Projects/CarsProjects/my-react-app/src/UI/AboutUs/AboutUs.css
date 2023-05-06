@@ -37,11 +37,13 @@
 /**************************/
 
 @media (max-width: 34em) {
+  .aboutUs-section {
+    gap: 0;
+    display: block;
+  }
+  
   .aboutUs-section img{
     display: none;
-  }
-  .aboutUs-section {
-    align-items: center;
   }
   
 }

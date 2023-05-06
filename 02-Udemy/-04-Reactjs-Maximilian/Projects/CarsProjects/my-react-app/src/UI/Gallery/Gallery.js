@@ -11,14 +11,14 @@ import rectangle from "./gallery/Rectangle2.png";
 const Gallery = () => {
   return (
     <div className="Gallery container">
-      <img src={car} alt="car" />
+      <img className="species" src={car} alt="car" />
       <img src={car1} alt="car" />
-      <img src={car2} alt="car" />
-      <img src={car3} alt="car" />
-      <img src={rectangle} alt="car" />
-      <img src={car4} alt="car" />
-      <img src={car5} alt="car" />
-      <img src={car6} alt="car" />
+      <img className="species" src={car2} alt="car" />
+      <img className="species" src={car3} alt="car" />
+      <img  src={rectangle} alt="car" />
+      <img className="species" src={car4} alt="car" />
+      <img className="species" src={car5} alt="car" />
+      <img className="species" src={car6} alt="car" />
       <img src={car7} alt="car" />
       <div className="tesla-model">
         <div>

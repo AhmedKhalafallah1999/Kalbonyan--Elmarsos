@@ -7,7 +7,6 @@
 }
 .services-card {
   display: flex;
-  /* align-items: center; */
   text-align: center;
   justify-content: space-between;
 }
@@ -18,4 +17,36 @@
 .services-section p {
   font-size: 2rem;
   width: 35rem;
+}
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (min-width: 44em) and (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+}
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (min-width: 34em) and (max-width: 44em) {
+}
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .services-section{
+    height: 100%;
+  }
+  .services-card {
+    display: flex;
+    gap: 3.6rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  
 }
