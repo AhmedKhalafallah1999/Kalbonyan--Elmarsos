@@ -15,10 +15,10 @@ const Gallery = () => {
       <img src={car1} alt="car" />
       <img className="species" src={car2} alt="car" />
       <img className="species" src={car3} alt="car" />
-      <img  src={rectangle} alt="car" />
+      <img  className="large-screen" src={rectangle} alt="car" />
       <img className="species" src={car4} alt="car" />
       <img className="species" src={car5} alt="car" />
-      <img className="species" src={car6} alt="car" />
+      <img className="species last" src={car6} alt="car" />
       <img src={car7} alt="car" />
       <div className="tesla-model">
         <div>

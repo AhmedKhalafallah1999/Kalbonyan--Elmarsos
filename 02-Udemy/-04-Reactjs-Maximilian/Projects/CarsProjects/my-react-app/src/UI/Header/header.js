@@ -31,6 +31,7 @@ const Header = () => {
           </a>
         </li>
       </ul>
+      <div className="card-number">0</div>
     </div>
   );
 };

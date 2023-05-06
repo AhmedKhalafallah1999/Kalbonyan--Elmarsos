@@ -48,12 +48,63 @@
     /* 8px / 16px = 0.5 = 50% */
     font-size: 50%;
   }
+  .aboutUs h1,
+  .services h1,
+  .testimonials h1 {
+    color: #ccc;
+    font-size: 12rem;
+  }
+  .testimonials h1 {
+    font-size: 6rem;
+  }
+  .aboutUs h5,
+  .services h5 {
+    position: initial;
+    text-align: center;
+    margin-top: -15rem;
+  }
+  .aboutUs h5 {
+    color: #741906;
+  }
+  .services h5 {
+    color: black;
+  }
+  .testimonials h5 {
+    color: white;
+    font-size: 3rem;
+  }
 }
 /**************************/
 /* BELOW 704px (Smaller tablets) */
 /**************************/
 
 @media (min-width: 34em) and (max-width: 44em) {
+  .aboutUs h1,
+  .services h1,
+  .testimonials h1 {
+    color: #ccc;
+    font-size: 7rem;
+  }
+  .testimonials h1 {
+    font-size: 6rem;
+  }
+  .aboutUs h5,
+  .services h5 {
+    position: initial;
+    text-align: center;
+    margin-top: -10rem;
+  }
+  .aboutUs h5 {
+    color: #741906;
+  }
+  .services h5 {
+    color: black;
+  }
+  .testimonials h5 {
+    color: white;
+    font-size: 3rem;
+  }
+
 }
 /**************************/
 /* BELOW 544px (Phones) */
@@ -61,15 +112,28 @@
 
 @media (max-width: 34em) {
   .aboutUs h1,
-  .services h1 {
+  .services h1,
+  .testimonials h1 {
     color: #ccc;
     font-size: 7rem;
+  }
+  .testimonials h1 {
+    font-size: 6rem;
   }
   .aboutUs h5,
   .services h5 {
     position: initial;
-    color: #741906;
     text-align: center;
     margin-top: -10rem;
+  }
+  .aboutUs h5 {
+    color: #741906;
+  }
+  .services h5 {
+    color: black;
+  }
+  .testimonials h5 {
+    color: white;
+    font-size: 3rem;
   }
 }

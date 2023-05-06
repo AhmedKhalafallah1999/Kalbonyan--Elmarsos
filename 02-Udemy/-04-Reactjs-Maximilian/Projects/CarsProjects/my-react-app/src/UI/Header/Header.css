@@ -12,7 +12,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 10%;
-  height: 7rem;
+  height: 15rem;
   z-index: 10;
 
   /* background-color: white; */
@@ -29,6 +29,7 @@
 .nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   list-style: none;
   font-family: "Noto Sans", sans-serif;
 }
@@ -36,13 +37,32 @@ a {
   /* color: #12273D; */
   color: white;
   text-decoration: none;
-  padding: 1rem;
+  padding: 1rem 2rem;
   font-size: 2.4rem;
   font-weight: 700;
 }
+.nav a:hover,
+.nav a:active {
+  background-color: #741906;
+  border-radius: 1.2rem;
+}
+
 .icon {
-  width: 5rem;
-  height: 4rem;
+  width: 8rem;
+  height: 8rem;
+  position: relative;
+}
+.header .card-number {
+  position: absolute;
+  background-color: rgba(255, 247, 0, 0.829);
+  height: 3rem;
+  width: 2.5rem;
+  right: 10%;
+  top: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
 }
 /**************************/
 /* BELOW 944px (Tablets) */
@@ -53,18 +73,49 @@ a {
     /* 8px / 16px = 0.5 = 50% */
     font-size: 50%;
   }
+  .nav {
+    display: none;
+  }
+
+  .header {
+    background-color: white;
+  }
+  .header h1 {
+    color: #12273d;
+  }
+
+  .header .card-number {
+    right: 5%;
+    top: 30%;
+  }
 }
 /**************************/
 /* BELOW 704px (Smaller tablets) */
 /**************************/
 
 @media (min-width: 34em) and (max-width: 44em) {
+  .header {
+    height: 8rem;
+  }
+
+  .nav {
+    display: none;
+  }
+  .header {
+    background-color: white;
+  }
+  .header h1 {
+    color: #12273d;
+  }
 }
 /**************************/
 /* BELOW 544px (Phones) */
 /**************************/
 
 @media (max-width: 34em) {
+  .header {
+    height: 8rem;
+  }
   .nav {
     display: none;
   }

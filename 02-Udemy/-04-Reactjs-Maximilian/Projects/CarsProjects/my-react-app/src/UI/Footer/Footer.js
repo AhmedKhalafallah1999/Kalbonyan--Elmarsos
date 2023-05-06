@@ -26,11 +26,11 @@ const Footer = () => {
             <input type="email" placeholder="Email"></input>
             <button type="submit">Subscribe</button>
           </div>
-          <div className="social-icons">
+          {/* <div className="social-icons">
             <ion-icon class="icon-social" name="logo-facebook"></ion-icon>
             <ion-icon class="icon-social" name="logo-twitter"></ion-icon>
             <ion-icon class="icon-social" name="logo-instagram"></ion-icon>
-          </div>
+          </div> */}
         </div>
         <div className="contact">
           <h1>Contact</h1>
@@ -53,6 +53,11 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+      <div className="social-icons">
+            <ion-icon class="icon-social" name="logo-facebook"></ion-icon>
+            <ion-icon class="icon-social" name="logo-twitter"></ion-icon>
+            <ion-icon class="icon-social" name="logo-instagram"></ion-icon>
+          </div>
       <div className="copy-right">
         <p>
           © Copyright 2023 · <strong>YourCar</strong> All rights reserved{" "}
