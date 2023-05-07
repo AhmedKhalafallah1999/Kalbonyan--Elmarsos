@@ -1,0 +1,7 @@
+.cars-cards {
+  display: flex;
+  text-align: center;
+}
+.cars-cards .card {
+  background-color: #fff;
+}

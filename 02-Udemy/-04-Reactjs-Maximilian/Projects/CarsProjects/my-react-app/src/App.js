@@ -7,6 +7,7 @@ import Gallery from "./UI/Gallery/Gallery";
 import Testimonials from "./UI/Testimoials/Testimonials";
 import Logos from "./UI/Logos/Logos";
 import Footer from "./UI/Footer/Footer";
+import Cars from "./UI/Cars/Cars";
 function App() {
   return (
     <>
@@ -14,10 +15,11 @@ function App() {
       <HeroSection></HeroSection>
       <AboutUs />
       <Services></Services>
+      <Cars/>
       <Gallery></Gallery>
       <Testimonials></Testimonials>
       <Logos></Logos>
-      <Footer/>
+      <Footer />
     </>
   );
 }
