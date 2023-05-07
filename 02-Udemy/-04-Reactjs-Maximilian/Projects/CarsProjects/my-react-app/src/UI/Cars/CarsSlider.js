@@ -1,103 +1,53 @@
 import { BsPeopleFill } from "react-icons/bs";
 import { MdLuggage } from "react-icons/md";
-import car from "./car4.png";
 import "./CarsSlider.css";
+// for slider component
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/swiper.min.css";
+import TestimonialsData from "../../data.json";
 const CarsSlider = () => {
   return (
-    <div className="cars-cards container">
-      <div className="card">
-        <img src={car} alt="car_categories"></img>
-        <div className="car-info">
-          <h3>First Class</h3>
-          <p>Mercedes maybach s600</p>
-          <p className="description">
-            The Porsche 911 is a true icon in the sports car world, known for
-            its sleek design, impressive performance, and superior handling.
-            It's a two-door, two-seat coupe that's perfect for those who love to
-            feel the wind in their hair and the road beneath their wheels.
-          </p>
-        </div>
-        <div className="category">
-          <div className="left-description">
-            <div className="cat1">
-              <BsPeopleFill className="cat1-icon" />
-              <p>4 Seats</p>
+    <Swiper
+      className="cars-cards container"
+      spaceBetween={50}
+      slidesPerView={1}
+      onSlideChange={() => console.log("slide change")}
+      onSwiper={(swiper) => console.log(swiper)}
+    >
+      {TestimonialsData.cars.map((item, index) => {
+        return (
+          <SwiperSlide className="card" key={index}>
+            <div>
+              <img src={item.image} alt="car_categories"></img>
+              <div className="car-info">
+                <h3>{item.class}</h3>
+                <p>{item.name}</p>
+                <p className="description">{item.description}</p>
+              </div>
+              <div className="category">
+                <div className="left-description">
+                  <div className="cat1">
+                    <BsPeopleFill className="cat1-icon" />
+                    <p>{item.seats} Seats</p>
+                  </div>
+                  <div className="cat2">
+                    <MdLuggage className="cat2-icon" />
+                    <p>{item.luggage} Luggage</p>
+                  </div>
+                </div>
+                <div className="right-description">
+                  <button className="minus">-</button>
+                  <span>7</span>
+                  <button className="plus">+</button>
+                </div>
+              </div>
             </div>
-            <div className="cat2">
-              <MdLuggage className="cat2-icon" />
-              <p>2 Luggage</p>
-            </div>
-          </div>
-          <div className="right-description">
-            <button className="minus">-</button>
-            <span>7</span>
-            <button className="plus">+</button>
-          </div>
-        </div>
-      </div>
-
-      <div className="card">
-        <img src={car} alt="car_categories"></img>
-        <div className="car-info">
-          <h3>First Class</h3>
-          <p>Mercedes maybach s600</p>
-          <p className="description">
-            The Porsche 911 is a true icon in the sports car world, known for
-            its sleek design, impressive performance, and superior handling.
-            It's a two-door, two-seat coupe that's perfect for those who love to
-            feel the wind in their hair and the road beneath their wheels.
-          </p>
-        </div>
-        <div className="category">
-          <div className="left-description">
-            <div className="cat1">
-              <BsPeopleFill className="cat1-icon" />
-              <p>4 Seats</p>
-            </div>
-            <div className="cat2">
-              <MdLuggage className="cat2-icon" />
-              <p>2 Luggage</p>
-            </div>
-          </div>
-          <div className="right-description">
-            <button className="minus">-</button>
-            <span>7</span>
-            <button className="plus">+</button>
-          </div>
-        </div>
-      </div>
-
-      <div className="card">
-        <img src={car} alt="car_categories"></img>
-        <div className="car-info">
-          <h3>First Class</h3>
-          <p>Mercedes maybach s600</p>
-          <p className="description">
-            The Porsche 911 is a true icon in the sports car world, known for
-            its sleek design, impressive performance, and superior handling.
-            It's a two-door, two-seat coupe that's perfect for those who love to
-            feel the wind in their hair and the road beneath their wheels.
-          </p>
-        </div>
-        <div className="category">
-          <div className="left-description">
-            <div className="cat1">
-              <BsPeopleFill className="cat1-icon" />
-              <p>4 Seats</p>
-            </div>
-            <div className="cat2">
-              <MdLuggage className="cat2-icon" />
-              <p>2 Luggage</p>
-            </div>
-          </div>
-          <div className="right-description">
-            <button className="minus">-</button>
-            <span>7</span>
-            <button className="plus">+</button>
-          </div>
-        </div>
-      </div>
-    </div>
+          </SwiperSlide>
+        );
+      })}
+    </Swiper>
   );
 };
 export default CarsSlider;

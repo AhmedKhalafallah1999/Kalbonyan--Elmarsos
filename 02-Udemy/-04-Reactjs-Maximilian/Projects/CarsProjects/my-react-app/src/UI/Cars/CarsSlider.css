@@ -1,26 +1,34 @@
 .cars-cards {
-  display: flex;
+  display: flex !important;
+  flex-direction: column !important;
   text-align: center;
   margin-bottom: 10rem;
 }
 .cars-cards .card {
-  box-shadow: 10px 10px 8px 14px #f4eded;
-  padding: 4.4rem;
+  box-shadow: 10px 10px 8px #f4eded;
+  padding: 2.4rem;
+  width: 30rem !important;
+  height: 60rem;
+}
+.card img {
+  max-width: 100%;
 }
 .car-info h3 {
   font-size: 3.2rem;
   color: #741906;
 }
 .car-info p {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
 }
 .car-info .description {
   text-align: left;
+  font-size: 1.4rem;
 }
 .cars-cards .category {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 10%;
 }
 .left-description {
   display: flex;
@@ -31,22 +39,22 @@
 .left-description .cat2 {
   display: flex;
   align-items: center;
-  gap: 3.6rem;
-  font-size: 3.2rem;
-  height: 8rem;
+  gap: 2.6rem;
+  font-size: 2rem;
+  height: 5rem;
 }
 .right-description {
-  font-size: 5.4rem;
+  font-size: 4.4rem;
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 .right-description .plus,
 .right-description .minus {
   background-color: #741906;
   border: none;
   color: white;
-  width: 5.4rem;
+  width: 4.4rem;
   height: 4.4rem;
   font-size: 4rem;
   cursor: pointer;

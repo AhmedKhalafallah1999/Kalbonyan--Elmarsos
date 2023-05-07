@@ -9,6 +9,7 @@ const Cars = () => {
       <CarsSlider />
       <MdKeyboardArrowLeft className="pointers-icons left" />
       <MdKeyboardArrowRight className="pointers-icons right" />
+      
     </div>
   );
 };
