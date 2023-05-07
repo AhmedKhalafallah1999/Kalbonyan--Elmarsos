@@ -1,6 +1,7 @@
 .testimonials-section {
   background-color: #12273d;
   height: 100vh;
+  position: relative;
 }
 .dataFetching {
   background-color: white;
@@ -31,19 +32,49 @@
   bottom: -10%;
   max-width: 200px;
 }
+/* For Slider */
+.slider {
+  display: flex;
+}
+.dataFetching.none {
+  display: none;
+}
+.dataFetching.visible {
+  display: block;
+}
+/* For Pointers */
 .pointers {
   display: flex;
   justify-content: center;
-  margin-top: 5%;
+  position: absolute;
+  bottom: 10%;
+  left: 40%;
 }
-.point {
+.pointer {
   border-radius: 50%;
   height: 2rem;
   width: 2rem;
   background-color: white;
-
   margin: 3rem;
 }
+.pointer.active {
+  background-color: aqua;
+}
+/**************************/
+/* BELOW 1220px (Tablets) */
+/**************************/
+
+@media (min-width: 59em) and (max-width: 70em) {
+  .testimonials-section {
+    height: 80vh;
+  }
+
+  .pointers {
+    left: 35%;
+    bottom: 5%;
+  }
+}
+
 /**************************/
 /* BELOW 944px (Tablets) */
 /**************************/
@@ -52,6 +83,14 @@
   html {
     /* 8px / 16px = 0.5 = 50% */
     font-size: 50%;
+  }
+  .testimonials-section {
+    height: 70vh;
+  }
+
+  .pointers {
+    left: 35%;
+    bottom: 5%;
   }
 }
 /**************************/
@@ -67,6 +106,10 @@
     flex-direction: column;
     gap: 0;
   }
+  .pointers {
+    left: 20%;
+    bottom: 8%;
+  }
 }
 /**************************/
 /* BELOW 544px (Phones) */
@@ -80,5 +123,8 @@
   .dataFetching .signiture {
     flex-direction: column;
     gap: 0;
+  }
+  .pointers {
+    left: 18%;
   }
 }
