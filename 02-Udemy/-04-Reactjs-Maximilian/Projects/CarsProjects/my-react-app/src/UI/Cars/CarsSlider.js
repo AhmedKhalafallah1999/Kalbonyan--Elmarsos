@@ -10,7 +10,7 @@ const CarsSlider = () => {
         <div className="car-info">
           <h3>First Class</h3>
           <p>Mercedes maybach s600</p>
-          <p>
+          <p className="description">
             The Porsche 911 is a true icon in the sports car world, known for
             its sleek design, impressive performance, and superior handling.
             It's a two-door, two-seat coupe that's perfect for those who love to
@@ -28,15 +28,20 @@ const CarsSlider = () => {
               <p>2 Luggage</p>
             </div>
           </div>
-          <div className="right-description"></div>
+          <div className="right-description">
+            <button className="minus">-</button>
+            <span>7</span>
+            <button className="plus">+</button>
+          </div>
         </div>
       </div>
+
       <div className="card">
         <img src={car} alt="car_categories"></img>
         <div className="car-info">
           <h3>First Class</h3>
           <p>Mercedes maybach s600</p>
-          <p>
+          <p className="description">
             The Porsche 911 is a true icon in the sports car world, known for
             its sleek design, impressive performance, and superior handling.
             It's a two-door, two-seat coupe that's perfect for those who love to
@@ -54,15 +59,20 @@ const CarsSlider = () => {
               <p>2 Luggage</p>
             </div>
           </div>
-          <div className="right-description"></div>
+          <div className="right-description">
+            <button className="minus">-</button>
+            <span>7</span>
+            <button className="plus">+</button>
+          </div>
         </div>
       </div>
+
       <div className="card">
         <img src={car} alt="car_categories"></img>
         <div className="car-info">
           <h3>First Class</h3>
           <p>Mercedes maybach s600</p>
-          <p>
+          <p className="description">
             The Porsche 911 is a true icon in the sports car world, known for
             its sleek design, impressive performance, and superior handling.
             It's a two-door, two-seat coupe that's perfect for those who love to
@@ -80,7 +90,11 @@ const CarsSlider = () => {
               <p>2 Luggage</p>
             </div>
           </div>
-          <div className="right-description"></div>
+          <div className="right-description">
+            <button className="minus">-</button>
+            <span>7</span>
+            <button className="plus">+</button>
+          </div>
         </div>
       </div>
     </div>

@@ -1,0 +1,25 @@
+.cars-section {
+  position: relative;
+}
+.pointers-icons {
+  position: absolute;
+  display: flex;
+  top: 60%;
+  background-color: #741906;
+  font-size: 4.4rem;
+  border-radius: 50%;
+  color: #fff;
+
+}
+/* .cars-icon {
+  background-color: #741906;
+  font-size: 4.4rem;
+  border-radius: 50%;
+  color: #fff;
+} */
+.right {
+  right: 5%;
+}
+.left {
+  left: 5%;
+}

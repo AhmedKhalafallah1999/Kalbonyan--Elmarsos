@@ -1,7 +1,61 @@
 .cars-cards {
   display: flex;
   text-align: center;
+  margin-bottom: 10rem;
 }
 .cars-cards .card {
-  background-color: #fff;
+  box-shadow: 10px 10px 8px 14px #f4eded;
+  padding: 4.4rem;
+}
+.car-info h3 {
+  font-size: 3.2rem;
+  color: #741906;
+}
+.car-info p {
+  font-size: 2.4rem;
+}
+.car-info .description {
+  text-align: left;
+}
+.cars-cards .category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left-description {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+.left-description .cat1,
+.left-description .cat2 {
+  display: flex;
+  align-items: center;
+  gap: 3.6rem;
+  font-size: 3.2rem;
+  height: 8rem;
+}
+.right-description {
+  font-size: 5.4rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.right-description .plus,
+.right-description .minus {
+  background-color: #741906;
+  border: none;
+  color: white;
+  width: 5.4rem;
+  height: 4.4rem;
+  font-size: 4rem;
+  cursor: pointer;
+}
+.right-description .plus {
+  border-top-right-radius: 1.2rem;
+  border-bottom-right-radius: 1.2rem;
+}
+.right-description .minus {
+  border-top-left-radius: 1.2rem;
+  border-bottom-left-radius: 1.2rem;
 }
