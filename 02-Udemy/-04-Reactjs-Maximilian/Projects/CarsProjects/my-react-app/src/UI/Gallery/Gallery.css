@@ -2,6 +2,7 @@
   max-width: 100%;
   width: 110%;
   position: relative;
+  margin-bottom: -6%;
 }
 .Gallery img {
   width: 50rem;
@@ -38,28 +39,36 @@
   right: 0;
 }
 .Gallery button:hover,
-.Gallery button:active
-.Gallery a:hover,
+.Gallery button:active .Gallery a:hover,
 .Gallery a:active {
   background-color: #741906;
 }
 
-
+/**************************/
+/* Morw 1220px (Large Screen) */
+/**************************/
+@media (min-width: 1400px) {
+  .Gallery img {
+    width: 33%;
+  }
+}
 /**************************/
 /* BELOW 1220px (Tablets) */
 /**************************/
-@media (min-width: 59em) and (max-width: 90em){
+@media (min-width: 59em) and (max-width: 90em) {
+  .Gallery {
+    margin-bottom: -7%;
+  }
   .Gallery img {
     width: 50%;
   }
-  .Gallery  .large-screen {
+  .Gallery .large-screen {
     width: 100%;
   }
   .tesla-model {
     top: 42.5%;
     left: 35%;
   }
-
 }
 /**************************/
 /* BELOW 944px (Tablets) */
@@ -70,6 +79,10 @@
     /* 8px / 16px = 0.5 = 50% */
     font-size: 50%;
   }
+  .Gallery {
+    margin-bottom: -7%;
+  }
+
   .tesla-model {
     top: 42.5%;
     left: 35%;
@@ -77,18 +90,19 @@
   .Gallery img {
     width: 50%;
   }
-  .Gallery  .large-screen {
+  .Gallery .large-screen {
     width: 100%;
   }
-
-
-
 }
 /**************************/
 /* BELOW 704px (Smaller tablets) */
 /**************************/
 
 @media (min-width: 34em) and (max-width: 44em) {
+  .Gallery {
+    margin-bottom: -7%;
+  }
+
   .tesla-model {
     top: 40%;
     left: 20%;
@@ -100,13 +114,16 @@
   .Gallery .species {
     display: none;
   }
-
 }
 /**************************/
 /* BELOW 544px (Phones) */
 /**************************/
 
 @media (max-width: 34em) {
+  .Gallery {
+    margin-bottom: -10%;
+  }
+
   .tesla-model {
     top: 40%;
     left: 20%;

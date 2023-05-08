@@ -3,6 +3,7 @@
   flex-direction: column !important;
   text-align: center;
   margin-bottom: 10rem;
+  height: 100vh;
 }
 .cars-cards .card {
   box-shadow: 10px 10px 8px #f4eded;
@@ -66,4 +67,32 @@
 .right-description .minus {
   border-top-left-radius: 1.2rem;
   border-bottom-left-radius: 1.2rem;
+}
+.swiper-pagination-bullet {
+  border-radius: 50%;
+  height: 4rem !important;
+  width: 4rem !important;
+  margin: 1rem !important;
+  margin-bottom: 0rem !important;
+  z-index: 5 !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #741906 !important;
+}
+.pointers-icons {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  background-color: #741906;
+  font-size: 4.4rem;
+  border-radius: 50%;
+  padding: 2rem;
+  color: #fff;
+  opacity: 1;
+}
+.right {
+  right: 0%;
+}
+.left {
+  left: 0%;
 }
