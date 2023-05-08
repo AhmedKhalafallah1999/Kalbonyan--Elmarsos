@@ -14,12 +14,16 @@
   position: absolute;
   top: 0;
 }
-.services h1 {
+.services h1,
+.cars h1 {
   text-align: center;
   color: #ccc;
 }
 .services h5 {
   left: 40%;
+}
+.cars h5 {
+  left: 45%;
 }
 .testimonials h1 {
   text-align: center;
@@ -50,7 +54,8 @@
   }
   .aboutUs h1,
   .services h1,
-  .testimonials h1 {
+  .testimonials h1,
+  .cars h1 {
     color: #ccc;
     font-size: 12rem;
   }
@@ -58,7 +63,8 @@
     font-size: 6rem;
   }
   .aboutUs h5,
-  .services h5 {
+  .services h5,
+  .cars h5 {
     position: initial;
     text-align: center;
     margin-top: -15rem;
@@ -66,7 +72,8 @@
   .aboutUs h5 {
     color: #741906;
   }
-  .services h5 {
+  .services h5,
+  .cars h5 {
     color: black;
   }
   .testimonials h5 {
@@ -81,6 +88,7 @@
 @media (min-width: 34em) and (max-width: 44em) {
   .aboutUs h1,
   .services h1,
+  .cars h1,
   .testimonials h1 {
     color: #ccc;
     font-size: 7rem;
@@ -89,7 +97,8 @@
     font-size: 6rem;
   }
   .aboutUs h5,
-  .services h5 {
+  .services h5,
+  .cars h5 {
     position: initial;
     text-align: center;
     margin-top: -10rem;
@@ -97,14 +106,14 @@
   .aboutUs h5 {
     color: #741906;
   }
-  .services h5 {
+  .services h5,
+  .cars h5 {
     color: black;
   }
   .testimonials h5 {
     color: white;
     font-size: 3rem;
   }
-
 }
 /**************************/
 /* BELOW 544px (Phones) */
@@ -113,7 +122,7 @@
 @media (max-width: 34em) {
   .aboutUs h1,
   .services h1,
-  .testimonials h1 {
+  .cars h1 .testimonials h1 {
     color: #ccc;
     font-size: 7rem;
   }
@@ -121,7 +130,8 @@
     font-size: 6rem;
   }
   .aboutUs h5,
-  .services h5 {
+  .services h5,
+  .cars h5 {
     position: initial;
     text-align: center;
     margin-top: -10rem;
@@ -129,7 +139,8 @@
   .aboutUs h5 {
     color: #741906;
   }
-  .services h5 {
+  .services h5,
+  .cars h5 {
     color: black;
   }
   .testimonials h5 {

@@ -15,7 +15,7 @@ function App() {
       <HeroSection></HeroSection>
       <AboutUs />
       <Services></Services>
-      <Cars/>
+      <Cars />
       <Gallery></Gallery>
       <Testimonials></Testimonials>
       <Logos></Logos>

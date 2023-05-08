@@ -7,6 +7,8 @@ const Heading = (props) => {
     classPointer = "special-heading aboutUs";
   } else if (props.type==='testimonials'){
     classPointer = "special-heading testimonials";
+  } else if(props.type === "cars"){
+    classPointer = "special-heading cars";
   }
   return (
     <div className={classPointer}>
