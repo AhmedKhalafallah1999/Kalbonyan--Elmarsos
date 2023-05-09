@@ -39,8 +39,17 @@ const carsDataSlice = createSlice({
       state.Data.forEach((item) => {
         if (item.id === action.payload) {
           if (item.Amount > 1) item.Amount--;
-          else {
-            state.Data.filter((item) => item.id === action.payload);
+          else if (item.Amount === 1) {
+            let filtered_arr = state.Data.filter(function(val) {
+              //callback function
+              if (val.id !== action.payload) {
+                //filtering criteria
+                return val;
+              } else{
+                return false;
+              }
+            });
+            state.Data = filtered_arr;
           }
         }
       });
