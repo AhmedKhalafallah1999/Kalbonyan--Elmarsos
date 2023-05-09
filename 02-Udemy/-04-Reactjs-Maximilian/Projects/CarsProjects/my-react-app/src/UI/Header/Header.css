@@ -42,7 +42,7 @@ a {
   font-weight: 700;
 }
 .nav a:hover,
-.nav a:active {
+.nav a.active {
   background-color: #741906;
   border-radius: 1.2rem;
 }
