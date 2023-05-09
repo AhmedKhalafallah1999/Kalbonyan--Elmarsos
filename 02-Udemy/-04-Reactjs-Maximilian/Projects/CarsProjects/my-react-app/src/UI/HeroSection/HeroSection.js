@@ -1,7 +1,11 @@
 import "./HeroSection.css";
+import SideList from "../../Components/SideList/SideList";
 import { BsArrowUpRight } from "react-icons/bs";
+import { useSelector } from "react-redux";
 // import Header from "../Header/header";
 const HeroSection = () => {
+  const shownState = useSelector((state) => state.shownCard.case);
+
   return (
     <div className="heroSection">
       {/* <Header></Header> */}
@@ -20,6 +24,8 @@ const HeroSection = () => {
         </button>
         </div>
       </div>
+      {shownState && <SideList />}
+
     </div>
   );
 };

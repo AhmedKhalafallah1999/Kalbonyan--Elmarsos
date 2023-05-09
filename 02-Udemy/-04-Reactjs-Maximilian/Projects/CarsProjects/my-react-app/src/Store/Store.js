@@ -40,12 +40,12 @@ const carsDataSlice = createSlice({
         if (item.id === action.payload) {
           if (item.Amount > 1) item.Amount--;
           else if (item.Amount === 1) {
-            let filtered_arr = state.Data.filter(function(val) {
+            let filtered_arr = state.Data.filter(function (val) {
               //callback function
               if (val.id !== action.payload) {
                 //filtering criteria
                 return val;
-              } else{
+              } else {
                 return false;
               }
             });
@@ -60,10 +60,25 @@ const carsDataSlice = createSlice({
     },
   },
 });
+const initialShownState = { case: false };
+const shownSlice = createSlice({
+  name: "shownCard",
+  initialState: initialShownState,
+  reducers: {
+    shown(state) {
+      state.case = !state.case;
+    },
+  },
+});
 
 const store = configureStore({
-  reducer: { counter: counterSlice.reducer, carsData: carsDataSlice.reducer },
+  reducer: {
+    counter: counterSlice.reducer,
+    carsData: carsDataSlice.reducer,
+    shownCard: shownSlice.reducer,
+  },
 });
 export const counterActions = counterSlice.actions;
 export const carsDataActions = carsDataSlice.actions;
+export const shownAction = shownSlice.actions;
 export default store;

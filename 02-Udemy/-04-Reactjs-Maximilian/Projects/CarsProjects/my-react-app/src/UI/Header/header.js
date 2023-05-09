@@ -1,13 +1,20 @@
 import "./Header.css";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Link, Outlet } from "react-router-dom";
 // import logo from "./logo.png";
 import { FiShoppingCart } from "react-icons/fi";
 // for using counter from the store to print on the cart
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { shownAction } from "../../Store/Store";
+
+// import { shownAction } from "../../Store/Store";
 const Header = () => {
   const counter = useSelector((state) => state.counter.counter);
-  const Data = useSelector((state) => state.carsData.Data);
-  console.log(Data);
+  // const Data = useSelector((state) => state.carsData.Data);
+  const shownDispatch = useDispatch();
+  function handlerCard() {
+    shownDispatch(shownAction.shown());
+  }
+  // console.log(shownState);
   return (
     <>
       <div className="header container">
@@ -61,9 +68,9 @@ const Header = () => {
             </NavLink>
           </li>
           <li>
-            <a className="icon" href={".."}>
+            <Link className="icon" to={"/"} onClick={handlerCard}>
               <FiShoppingCart />
-            </a>
+            </Link>
           </li>
         </ul>
         <div className="card-number">{counter}</div>

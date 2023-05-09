@@ -1,0 +1,121 @@
+.SideBar {
+  position: absolute;
+  position: fixed;
+  /* position: sticky; */
+  overflow: auto;
+  overflow-y: scroll;
+  height: 400px;
+  background-color: #101927;
+  height: 80vh;
+  width: 25%;
+  right: 0;
+  top: 20%;
+  display: flex;
+  right: 0;
+  z-index: 1000;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+  opacity: 1;
+}
+.SideBar .cart-busket {
+  background-color: white;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 18vh;
+  margin-bottom: 5%;
+  width: 100%;
+  padding: 2rem;
+}
+.SideBar .cart-busket .name-car {
+  color: #741906;
+  font-size: 1.8rem;
+}
+.SideBar .cart-busket p {
+  font-size: 1.6rem;
+}
+.SideBar .cart-busket img {
+  max-width: 100%;
+  width: 15rem;
+  height: 10rem;
+}
+.SideBar .right-description {
+  font-size: 2.4rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.SideBar .right-description .plus,
+.SideBar .right-description .minus {
+  background-color: #741906;
+  border: none;
+  color: white;
+  width: 3.4rem;
+  height: 3.4rem;
+  font-size: 4rem;
+  cursor: pointer;
+}
+.SideBar .right-description .plus {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.SideBar .right-description .minus {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (min-width: 44em) and (max-width: 70em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+  .SideBar {
+    width: 40%;
+    top: 15%;
+    padding: 5rem;
+    opacity: 1;
+  }
+  .SideBar .cart-busket {
+    gap: 8rem;
+    align-items: center;
+    width: 90%;
+  }
+}
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (min-width: 34em) and (max-width: 44em) {
+  .SideBar {
+    width: 90%;
+    top: 10%;
+    padding: 5rem;
+    opacity: 1;
+  }
+  .SideBar .cart-busket {
+    gap: 8rem;
+    align-items: center;
+  }
+}
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .SideBar {
+    width: 85%;
+    top: 10%;
+    padding: 5rem;
+    opacity: 1;
+  }
+  .SideBar .cart-busket {
+    gap: 8rem;
+    align-items: center;
+  }
+}

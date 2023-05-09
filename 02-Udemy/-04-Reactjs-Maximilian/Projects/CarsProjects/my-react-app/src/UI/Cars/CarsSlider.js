@@ -16,14 +16,12 @@ import TestimonialsData from "../../data.json";
 // for using dispatch and edit the storedata
 import { counterActions, carsDataActions } from "../../Store/Store";
 import { useDispatch } from "react-redux";
-import { useSelector } from "react-redux";
 const CarsSlider = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const swiperRef = useRef();
   const counterDispatch = useDispatch();
   const carsDataDispatch = useDispatch();
-  const carsSelector = useSelector((state) => state.carsData.Data);
-  console.log(carsSelector);
+
   useEffect(() => {
     const handleWindowResize = () => {
       setWindowWidth(window.innerWidth);
@@ -93,6 +91,7 @@ const CarsSlider = () => {
                             id: index,
                             seats: item.seats,
                             name: item.name,
+                            info: item.class,
                             image: item.image,
                             Amount: 1,
                           })
