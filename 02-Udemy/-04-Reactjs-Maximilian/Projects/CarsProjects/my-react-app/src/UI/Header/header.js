@@ -2,7 +2,10 @@ import "./Header.css";
 import { NavLink, Outlet } from "react-router-dom";
 // import logo from "./logo.png";
 import { FiShoppingCart } from "react-icons/fi";
+// for using counter from the store to print on the cart
+import { useSelector } from "react-redux";
 const Header = () => {
+  const counter = useSelector((state) => state.counter);
   return (
     <>
       <div className="header container">
@@ -61,7 +64,7 @@ const Header = () => {
             </a>
           </li>
         </ul>
-        <div className="card-number">0</div>
+        <div className="card-number">{counter}</div>
       </div>
       <Outlet />
     </>

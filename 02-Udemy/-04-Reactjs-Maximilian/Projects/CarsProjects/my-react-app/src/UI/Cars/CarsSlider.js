@@ -13,9 +13,13 @@ import "swiper/swiper.min.css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import TestimonialsData from "../../data.json";
+// for using dispatch and edit the storedata
+import { counterActions } from "../../Store/Store";
+import { useDispatch } from "react-redux";
 const CarsSlider = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const swiperRef = useRef();
+  const counterDispatch = useDispatch();
   useEffect(() => {
     const handleWindowResize = () => {
       setWindowWidth(window.innerWidth);
@@ -67,9 +71,23 @@ const CarsSlider = () => {
                     </div>
                   </div>
                   <div className="right-description">
-                    <button className="minus">-</button>
+                    <button
+                      className="minus"
+                      onClick={() =>
+                        counterDispatch(counterActions.decrement())
+                      }
+                    >
+                      -
+                    </button>
                     <span>7</span>
-                    <button className="plus">+</button>
+                    <button
+                      className="plus"
+                      onClick={() =>
+                        counterDispatch(counterActions.increament())
+                      }
+                    >
+                      +
+                    </button>
                   </div>
                 </div>
               </div>
