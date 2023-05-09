@@ -5,7 +5,9 @@ import { FiShoppingCart } from "react-icons/fi";
 // for using counter from the store to print on the cart
 import { useSelector } from "react-redux";
 const Header = () => {
-  const counter = useSelector((state) => state.counter);
+  const counter = useSelector((state) => state.counter.counter);
+  const Data = useSelector((state) => state.carsData.Data);
+  console.log(Data);
   return (
     <>
       <div className="header container">

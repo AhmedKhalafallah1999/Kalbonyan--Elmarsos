@@ -14,12 +14,13 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import TestimonialsData from "../../data.json";
 // for using dispatch and edit the storedata
-import { counterActions } from "../../Store/Store";
+import { counterActions, carsDataActions } from "../../Store/Store";
 import { useDispatch } from "react-redux";
 const CarsSlider = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const swiperRef = useRef();
   const counterDispatch = useDispatch();
+  const carsDataDispatch = useDispatch();
   useEffect(() => {
     const handleWindowResize = () => {
       setWindowWidth(window.innerWidth);
@@ -73,18 +74,31 @@ const CarsSlider = () => {
                   <div className="right-description">
                     <button
                       className="minus"
-                      onClick={() =>
-                        counterDispatch(counterActions.decrement())
-                      }
+                      onClick={() => {
+                        counterDispatch(counterActions.decrement());
+                        carsDataDispatch(
+                          carsDataActions.decreament({
+                            id: index,
+                          })
+                        );
+                      }}
                     >
                       -
                     </button>
                     <span>7</span>
                     <button
                       className="plus"
-                      onClick={() =>
-                        counterDispatch(counterActions.increament())
-                      }
+                      onClick={() => {
+                        counterDispatch(counterActions.increament());
+                        carsDataDispatch(
+                          carsDataActions.increament({
+                            id: index,
+                            seats: item.seats,
+                            name: item.name,
+                            image: item.image,
+                          })
+                        );
+                      }}
                     >
                       +
                     </button>
