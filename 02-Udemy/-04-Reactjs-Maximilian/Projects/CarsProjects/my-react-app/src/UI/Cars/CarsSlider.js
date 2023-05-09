@@ -76,11 +76,7 @@ const CarsSlider = () => {
                       className="minus"
                       onClick={() => {
                         counterDispatch(counterActions.decrement());
-                        carsDataDispatch(
-                          carsDataActions.decreament({
-                            id: index,
-                          })
-                        );
+                        carsDataDispatch(carsDataActions.decreament(index));
                       }}
                     >
                       -
@@ -96,6 +92,7 @@ const CarsSlider = () => {
                             seats: item.seats,
                             name: item.name,
                             image: item.image,
+                            Amount: 1,
                           })
                         );
                       }}

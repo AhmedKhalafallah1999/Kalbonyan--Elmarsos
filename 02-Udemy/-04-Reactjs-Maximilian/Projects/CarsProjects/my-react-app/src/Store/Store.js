@@ -16,29 +16,40 @@ const counterSlice = createSlice({
     },
   },
 });
-const initialCarsState = { Data: [], AmountCar: 0 };
+const initialCarsState = { Data: [], AmountCar: 0, notFound: 0 };
 const carsDataSlice = createSlice({
   name: "carsData",
   initialState: initialCarsState,
   reducers: {
     increament: (state, action) => {
-      if (!state.Data[action.payload["id"]]) state.Data.push(action.payload);
-      else {
-        state.Data[action.payload["id"]] = {
-          ...state.Data[action.payload],
-          amount: state.AmountCar++,
-        };
+      state.Data.forEach((item) => {
+        if (item.name === action.payload.name) {
+          item.Amount++;
+          state.notFound = 0;
+          return state;
+        }
+        state.notFound++;
+      });
+      if (state.notFound === state.Data.length) {
+        state.Data.push(action.payload);
+        state.notFound = 0;
       }
     },
     decreament: (state, action) => {
-      state.Data.push(action.payload);
+      state.Data.forEach((item) => {
+        if (item.id === action.payload) {
+          if (item.Amount > 1) item.Amount--;
+          else {
+            state.Data.filter((item) => item.id === action.payload);
+          }
+        }
+      });
+      // if (state.notFound === state.Data.length) {
+      //   // state.Data.push(action.payload);
+      //   state.notFound = 0;
+      // }
     },
   },
-  // decrement(state) {
-  //   if (state.carAmount > 0) {
-  //     state.carAmount--;
-  //   }
-  // },
 });
 
 const store = configureStore({
