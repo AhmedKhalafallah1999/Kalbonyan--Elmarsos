@@ -33,6 +33,10 @@
   list-style: none;
   font-family: "Noto Sans", sans-serif;
 }
+.nav .smallNavBar {
+  display: none;
+}
+
 a {
   /* color: #12273D; */
   color: white;
@@ -73,7 +77,7 @@ a {
     /* 8px / 16px = 0.5 = 50% */
     font-size: 50%;
   }
-  .nav {
+  .nav .link {
     display: none;
   }
 
@@ -83,10 +87,15 @@ a {
   .header h1 {
     color: #12273d;
   }
-
+  .nav .icon {
+    color: #741906;
+  }
   .header .card-number {
-    right: 5%;
+    right: 10%;
     top: 30%;
+    background-color: #741906;
+    font-size: 2rem;
+    color: white;
   }
 }
 /**************************/
@@ -98,7 +107,7 @@ a {
     height: 8rem;
   }
 
-  .nav {
+  .nav .link {
     display: none;
   }
   .header {
@@ -106,6 +115,13 @@ a {
   }
   .header h1 {
     color: #12273d;
+  }
+  .nav .icon {
+    color: #741906;
+  }
+  .header .card-number {
+    background-color: #741906;
+    color: white;
   }
 }
 /**************************/
@@ -116,7 +132,7 @@ a {
   .header {
     height: 8rem;
   }
-  .nav {
+  .nav .link {
     display: none;
   }
   .header {
@@ -124,5 +140,31 @@ a {
   }
   .header h1 {
     color: #12273d;
+  }
+  .nav .icon {
+    color: #741906;
+  }
+  .header .card-number {
+    background-color: #741906;
+    color: white;
+  }
+  .header .card-number {
+    right: 23%;
+    top: 30%;
+    background-color: #741906;
+    font-size: 2rem;
+    color: white;
+  }
+
+  .nav .smallNavBar {
+    display: block;
+    font-size: 2.4rem;
+  }
+  .nav .smallNavBar a:hover,
+  .nav .smallNavBar a:active,
+  .nav .icon:hover,
+  .nav .icon:active {
+    border-radius: 0;
+    background-color: initial;
   }
 }

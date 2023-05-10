@@ -5,7 +5,7 @@ import { FiShoppingCart } from "react-icons/fi";
 // for using counter from the store to print on the cart
 import { useSelector, useDispatch } from "react-redux";
 import { shownAction } from "../../Store/Store";
-
+import { BsList } from "react-icons/bs";
 // import { shownAction } from "../../Store/Store";
 const Header = () => {
   const counter = useSelector((state) => state.counter.counter);
@@ -14,6 +14,10 @@ const Header = () => {
   function handlerCard() {
     shownDispatch(shownAction.shown());
   }
+  function handlerNavigationCard() {
+    shownDispatch(shownAction.shownNavigation());
+  }
+
   // console.log(shownState);
   return (
     <>
@@ -26,7 +30,7 @@ const Header = () => {
         </div>
 
         <ul className="nav">
-          <li>
+          <li className="link">
             <NavLink
               to={"/"}
               className={({ isActive }) => (isActive ? "active" : undefined)}
@@ -35,7 +39,7 @@ const Header = () => {
               Home
             </NavLink>
           </li>
-          <li>
+          <li className="link">
             <NavLink
               to={"/about"}
               className={({ isActive }) => (isActive ? "active" : undefined)}
@@ -43,7 +47,7 @@ const Header = () => {
               About
             </NavLink>
           </li>
-          <li>
+          <li className="link">
             <NavLink
               to={"/services"}
               className={({ isActive }) => (isActive ? "active" : undefined)}
@@ -51,7 +55,7 @@ const Header = () => {
               Services
             </NavLink>
           </li>
-          <li>
+          <li className="link">
             <NavLink
               to={"/cars"}
               className={({ isActive }) => (isActive ? "active" : undefined)}
@@ -59,7 +63,7 @@ const Header = () => {
               Cars
             </NavLink>
           </li>
-          <li>
+          <li className="link">
             <NavLink
               to={"/contactus"}
               className={({ isActive }) => (isActive ? "active" : undefined)}
@@ -70,6 +74,11 @@ const Header = () => {
           <li>
             <Link className="icon" to={"/"} onClick={handlerCard}>
               <FiShoppingCart />
+            </Link>
+          </li>
+          <li className="smallNavBar">
+            <Link className="icon" onClick={handlerNavigationCard}>
+              <BsList />
             </Link>
           </li>
         </ul>

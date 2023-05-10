@@ -14,6 +14,9 @@ const counterSlice = createSlice({
         state.counter--;
       }
     },
+    rsetart(state) {
+      state.counter = 0;
+    },
   },
 });
 const initialCarsState = { Data: [], AmountCar: 0, notFound: 0 };
@@ -58,15 +61,33 @@ const carsDataSlice = createSlice({
       //   state.notFound = 0;
       // }
     },
+    deleteAll: (state) => {
+      state.Data = [];
+    },
+    delete: (state, action) => {
+      let filtered_arr = state.Data.filter(function (val) {
+        //callback function
+        if (val.name !== action.payload) {
+          //filtering criteria
+          return val;
+        } else {
+          return false;
+        }
+      });
+      state.Data = filtered_arr;
+    },
   },
 });
-const initialShownState = { case: false };
+const initialShownState = { case: false,shownNavigation:false };
 const shownSlice = createSlice({
   name: "shownCard",
   initialState: initialShownState,
   reducers: {
     shown(state) {
       state.case = !state.case;
+    },
+    shownNavigation(state) {
+      state.shownNavigation = !state.shownNavigation;
     },
   },
 });

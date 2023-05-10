@@ -66,6 +66,27 @@
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
 }
+.delete-icon {
+  font-size: 3rem;
+  cursor: pointer;
+}
+.deleteAll {
+  background-color: #741906;
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  padding: 1rem;
+  width: 60%;
+  display: flex;
+  gap: 2rem;
+  font-size: 2.4rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+  font-family: "Noto Sans", sans-serif;
+}
 /**************************/
 /* BELOW 944px (Tablets) */
 /**************************/
