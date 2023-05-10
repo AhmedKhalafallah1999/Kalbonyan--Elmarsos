@@ -21,7 +21,6 @@ function App() {
         {
           path: "/",
           element: [
-       
             <HeroSection></HeroSection>,
             <SideList />,
             <AboutUs />,

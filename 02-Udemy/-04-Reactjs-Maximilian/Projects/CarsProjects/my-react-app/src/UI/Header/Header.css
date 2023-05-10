@@ -14,9 +14,34 @@
   padding: 0 10%;
   height: 15rem;
   z-index: 10;
+  background-color: white;
+  background: transparent;
 
   /* background-color: white; */
 }
+
+.header-scrolled {
+  background-color: white;
+  color: #12273d;
+  box-shadow: 5px 3px 20px rgba(black, 0.2);
+}
+.header-scrolled h1 {
+  color: #12273d !important;
+}
+.header-scrolled a {
+  color: #12273d !important;
+}
+.header-scrolled .card-number {
+  background-color: #741906 !important;
+}
+.header-scrolled a:hover,
+.header-scrolled a.active {
+  color: white !important;
+}
+.header-scrolled .icon {
+  color: #741906 !important;
+}
+
 .header h1 {
   font-weight: 800;
   font-size: 4.2rem;

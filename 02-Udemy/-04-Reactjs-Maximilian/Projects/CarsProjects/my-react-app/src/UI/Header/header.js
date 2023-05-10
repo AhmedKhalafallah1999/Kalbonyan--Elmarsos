@@ -6,11 +6,25 @@ import { FiShoppingCart } from "react-icons/fi";
 import { useSelector, useDispatch } from "react-redux";
 import { shownAction } from "../../Store/Store";
 import { BsList } from "react-icons/bs";
+import { useState } from "react";
 // import { shownAction } from "../../Store/Store";
 const Header = () => {
   const counter = useSelector((state) => state.counter.counter);
-  // const Data = useSelector((state) => state.carsData.Data);
+  const [navbar, setNavBar] = useState(false);
   const shownDispatch = useDispatch();
+  function changBackground() {
+    if (window.scrollY >= 750) {
+      setNavBar(true);
+    } else {
+      setNavBar(false);
+    }
+    if (window.scrollX > 500) {
+      shownDispatch(shownAction.shownNavigation());
+    }
+  }
+  window.addEventListener("scroll", changBackground);
+  // const Data = useSelector((state) => state.carsData.Data);
+
   function handlerCard() {
     shownDispatch(shownAction.shown());
   }
@@ -21,7 +35,11 @@ const Header = () => {
   // console.log(shownState);
   return (
     <>
-      <div className="header container">
+      <div
+        className={
+          navbar ? "header container header-scrolled" : "header container "
+        }
+      >
         <div>
           {/* <img src={logo} alt="jj" /> */}
           <h1>
