@@ -15,12 +15,22 @@ import "swiper/css/pagination";
 import TestimonialsData from "../../data.json";
 // for using dispatch and edit the storedata
 import { counterActions, carsDataActions } from "../../Store/Store";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 const CarsSlider = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const swiperRef = useRef();
   const counterDispatch = useDispatch();
   const carsDataDispatch = useDispatch();
+  const DataSelector = useSelector((state) => state.carsData.Data);
+  // const counterSelector = useSelector((state) => state.counter.counter);
+  // const [updateAmount, setInput] = useState();
+  useEffect(() => {
+    DataSelector.forEach((item) => {
+      const input_value = document.getElementById("cart" + item.id);
+      input_value.value = item.Amount;
+    });
+  }, [DataSelector]);
+  // const setAmount = (index) => {};
 
   useEffect(() => {
     const handleWindowResize = () => {
@@ -77,11 +87,17 @@ const CarsSlider = () => {
                       onClick={() => {
                         counterDispatch(counterActions.decrement());
                         carsDataDispatch(carsDataActions.decreament(index));
+                        // setAmount(index);
                       }}
                     >
                       -
                     </button>
-                    <span>0</span>
+                    <input
+                      className="Amount"
+                      type="number"
+                      id={"cart" + index}
+                      value={0}
+                    />
                     <button
                       className="plus"
                       onClick={() => {
@@ -96,6 +112,7 @@ const CarsSlider = () => {
                             Amount: 1,
                           })
                         );
+                        // setAmount(index);
                       }}
                     >
                       +
