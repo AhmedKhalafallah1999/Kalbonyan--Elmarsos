@@ -14,6 +14,7 @@
   flex-direction: column;
   scroll-behavior: smooth;
   opacity: 1;
+  z-index: 10000;
   /* display: none; */
 }
 .SideNav ul {

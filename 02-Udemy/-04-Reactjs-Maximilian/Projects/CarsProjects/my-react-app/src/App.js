@@ -11,7 +11,7 @@ import Footer from "./UI/Footer/Footer";
 import Cars from "./UI/Cars/Cars";
 import ErrorRouter from "./Components/Error/ErrorRouter";
 import SideList from "./Components/SideList/SideList";
-// import { LoaderStyled } from "./UI/AboutUs/LoaderStyled";
+// import { LocalStorage } from "./Store/LocalStorage";
 function App() {
   console.log(window.innerHeight);
   const router = createBrowserRouter([
@@ -19,6 +19,7 @@ function App() {
       path: "/",
       element: <Header />,
       errorElement: <ErrorRouter />,
+      // loader: LocalStorage,
       children: [
         {
           path: "/",

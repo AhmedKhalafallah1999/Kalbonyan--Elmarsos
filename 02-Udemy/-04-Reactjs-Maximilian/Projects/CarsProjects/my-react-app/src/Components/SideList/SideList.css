@@ -17,7 +17,7 @@
   display: flex;
   flex-direction: column;
   scroll-behavior: smooth;
-  opacity: 1;
+  opacity: 0.6;
 }
 .SideBar .cart-busket {
   background-color: white;
@@ -131,9 +131,9 @@
 @media (max-width: 34em) {
   .SideBar {
     width: 85%;
-    top: 10%;
+    top: 15%;
     padding: 5rem;
-    opacity: 1;
+    opacity: 0.5;
   }
   .SideBar .cart-busket {
     gap: 8rem;

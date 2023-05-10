@@ -7,13 +7,25 @@ import { useSelector, useDispatch } from "react-redux";
 import { shownAction } from "../../Store/Store";
 import { BsList } from "react-icons/bs";
 import { useState, useEffect } from "react";
+import { counterActions, carsDataActions } from "../../Store/Store";
 // import { shownAction } from "../../Store/Store";
 const Header = (props) => {
-  console.log(props);
+  const counterDispatch = useDispatch();
+  const ProductsDispatch = useDispatch();
+  const shownDispatch = useDispatch();
+
+  window.onload = function () {
+    const counter = JSON.parse(localStorage.getItem("counter"));
+    counterDispatch(counterActions.initilize(counter));
+    const ProductsData = JSON.parse(localStorage.getItem("DataArray"));
+    ProductsDispatch(carsDataActions.initilize(ProductsData));
+    const showCart = JSON.parse(localStorage.getItem("CardShow"));
+    ProductsDispatch(shownAction.initilize(showCart));
+  };
+
   const counter = useSelector((state) => state.counter.counter);
   const brevStateShow = useSelector((state) => state.shownCard.shownNavigation);
   const [navbar, setNavBar] = useState(false);
-  const shownDispatch = useDispatch();
   function changBackground() {
     if (window.scrollY >= 750) {
       setNavBar(true);

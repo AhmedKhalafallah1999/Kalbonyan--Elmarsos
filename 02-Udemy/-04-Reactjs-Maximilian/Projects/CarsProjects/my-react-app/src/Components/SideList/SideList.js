@@ -3,6 +3,7 @@ import { RiDeleteBin5Line } from "react-icons/ri";
 import { useSelector, useDispatch } from "react-redux";
 import { carsDataActions, counterActions } from "../../Store/Store";
 const SideList = () => {
+
   const carsData = useSelector((state) => state.carsData.Data);
   const shownState = useSelector((state) => state.shownCard.case);
   const deleteDispatch = useDispatch();
@@ -27,9 +28,12 @@ const SideList = () => {
 
                     <RiDeleteBin5Line
                       className="delete-icon"
-                      onClick={() =>
-                        deleteDispatch(carsDataActions.delete(item.name))
-                      }
+                      onClick={() => {
+                        deleteDispatch(carsDataActions.delete(item.name));
+                        deleteDispatch(
+                          counterActions.decreaseByAmount(item.Amount)
+                        );
+                      }}
                     />
                   </div>
                 </div>

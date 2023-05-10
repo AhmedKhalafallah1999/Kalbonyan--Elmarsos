@@ -2,20 +2,34 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { createSlice } from "@reduxjs/toolkit";
 const initialCounterState = { counter: 0 };
+function LocalStorage(dataNeeded, target) {
+  localStorage.setItem(target, JSON.stringify(dataNeeded));
+}
+
 const counterSlice = createSlice({
   name: "counter",
   initialState: initialCounterState,
   reducers: {
-    increament(state) {
+    increament(state = 0) {
       state.counter++;
+      LocalStorage(state.counter, "counter");
     },
     decrement(state) {
       if (state.counter > 0) {
         state.counter--;
+        LocalStorage(state.counter, "counter");
       }
     },
     rsetart(state) {
       state.counter = 0;
+      LocalStorage(state.counter, "counter");
+    },
+    decreaseByAmount(state, action) {
+      state.counter -= action.payload;
+      LocalStorage(state.counter, "counter");
+    },
+    initilize(state, action) {
+      if (action.payload) state.counter = action.payload;
     },
   },
 });
@@ -37,6 +51,7 @@ const carsDataSlice = createSlice({
         state.Data.push(action.payload);
         state.notFound = 0;
       }
+      LocalStorage(state.Data, "DataArray");
     },
     decreament: (state, action) => {
       state.Data.forEach((item) => {
@@ -60,9 +75,11 @@ const carsDataSlice = createSlice({
       //   // state.Data.push(action.payload);
       //   state.notFound = 0;
       // }
+      LocalStorage(state.Data, "DataArray");
     },
     deleteAll: (state) => {
       state.Data = [];
+      LocalStorage(state.Data, "DataArray");
     },
     delete: (state, action) => {
       let filtered_arr = state.Data.filter(function (val) {
@@ -75,6 +92,10 @@ const carsDataSlice = createSlice({
         }
       });
       state.Data = filtered_arr;
+      LocalStorage(state.Data, "DataArray");
+    },
+    initilize: (state, action) => {
+      state.Data = action.payload;
     },
   },
 });
@@ -85,6 +106,7 @@ const shownSlice = createSlice({
   reducers: {
     shown(state) {
       state.case = !state.case;
+      LocalStorage(state.case, "CardShow");
     },
     shownNavigation(state, action) {
       console.log(action);
@@ -93,6 +115,10 @@ const shownSlice = createSlice({
       } else if (action.payload.type === "screen") {
         state.shownNavigation = action.payload.payload;
       }
+      LocalStorage(state.shownNavigation, "NavShow");
+    },
+    initilize: (state, action) => {
+      state.case = action.payload;
     },
   },
 });
@@ -104,6 +130,7 @@ const store = configureStore({
     shownCard: shownSlice.reducer,
   },
 });
+
 export const counterActions = counterSlice.actions;
 export const carsDataActions = carsDataSlice.actions;
 export const shownAction = shownSlice.actions;
