@@ -4,10 +4,12 @@ import icon1 from "./icon1.png";
 import icon2 from "./icon2.png";
 import icon3 from "./icon3.png";
 const Services = () => {
+  console.log(window.innerHeight);
+
   return (
     <div className="services-section">
       <div className="container">
-        <Heading h1={"SERVICES"} h5={"Services"} type={'services'}></Heading>
+        <Heading h1={"SERVICES"} h5={"Services"} type={"services"}></Heading>
         <div className="services-card">
           <div>
             <img src={icon1} alt="icon"></img>

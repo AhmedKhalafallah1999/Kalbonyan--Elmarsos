@@ -6,10 +6,12 @@ import { FiShoppingCart } from "react-icons/fi";
 import { useSelector, useDispatch } from "react-redux";
 import { shownAction } from "../../Store/Store";
 import { BsList } from "react-icons/bs";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 // import { shownAction } from "../../Store/Store";
-const Header = () => {
+const Header = (props) => {
+  console.log(props);
   const counter = useSelector((state) => state.counter.counter);
+  const brevStateShow = useSelector((state) => state.shownCard.shownNavigation);
   const [navbar, setNavBar] = useState(false);
   const shownDispatch = useDispatch();
   function changBackground() {
@@ -18,24 +20,48 @@ const Header = () => {
     } else {
       setNavBar(false);
     }
-    if (window.scrollX > 500) {
-      shownDispatch(shownAction.shownNavigation());
-    }
   }
-  window.addEventListener("scroll", changBackground);
-  // const Data = useSelector((state) => state.carsData.Data);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    if (props.specialHeader) {
+      const headerSpeaial = document.querySelector("header");
+      headerSpeaial.classList.add("header-scrolledSpecial");
+      // headerSpeaial.classList.add("margin");
+    } else {
+      const headerSpeaial = document.querySelector("header");
+      headerSpeaial.classList.remove("header-scrolledSpecial");
+      // headerSpeaial.classList.remove("margin");
+    }
+
+    window.addEventListener("resize", handleWindowResize);
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  });
+  if (windowWidth > 940) {
+    shownDispatch(
+      shownAction.shownNavigation({ type: "screen", payload: false })
+    );
+  }
+
+  window.addEventListener("scroll", changBackground);
   function handlerCard() {
     shownDispatch(shownAction.shown());
   }
   function handlerNavigationCard() {
-    shownDispatch(shownAction.shownNavigation());
+    shownDispatch(
+      shownAction.shownNavigation({ type: "bar", payload: brevStateShow })
+    );
   }
 
   // console.log(shownState);
   return (
     <>
-      <div
+      <header
         className={
           navbar ? "header container header-scrolled" : "header container "
         }
@@ -101,7 +127,7 @@ const Header = () => {
           </li>
         </ul>
         <div className="card-number">{counter}</div>
-      </div>
+      </header>
       <Outlet />
     </>
   );

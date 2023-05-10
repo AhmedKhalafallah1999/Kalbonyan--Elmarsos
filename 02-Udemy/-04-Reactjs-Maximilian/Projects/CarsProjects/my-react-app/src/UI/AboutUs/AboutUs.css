@@ -4,8 +4,7 @@
   display: flex;
   justify-content: space-between;
   gap: 5rem;
-  font-family: 'Noto Sans', sans-serif;
-
+  font-family: "Noto Sans", sans-serif;
 }
 .aboutUs-section p {
   font-size: 2rem;
@@ -31,16 +30,14 @@
     gap: 0;
     display: block;
   }
-  .aboutUs-section p{
+  .aboutUs-section p {
     font-size: 2.6rem;
     line-height: 3.6rem;
   }
 
-  
-  .aboutUs-section img{
+  .aboutUs-section img {
     display: none;
   }
-
 }
 /**************************/
 /* BELOW 704px (Smaller tablets) */
@@ -51,11 +48,10 @@
     gap: 0;
     display: block;
   }
-  
-  .aboutUs-section img{
+
+  .aboutUs-section img {
     display: none;
   }
-
 }
 /**************************/
 /* BELOW 544px (Phones) */
@@ -66,9 +62,8 @@
     gap: 0;
     display: block;
   }
-  
-  .aboutUs-section img{
+
+  .aboutUs-section img {
     display: none;
   }
-  
 }

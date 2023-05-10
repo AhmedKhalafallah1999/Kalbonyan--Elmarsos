@@ -78,7 +78,7 @@ const carsDataSlice = createSlice({
     },
   },
 });
-const initialShownState = { case: false,shownNavigation:false };
+const initialShownState = { case: false, shownNavigation: false };
 const shownSlice = createSlice({
   name: "shownCard",
   initialState: initialShownState,
@@ -86,8 +86,13 @@ const shownSlice = createSlice({
     shown(state) {
       state.case = !state.case;
     },
-    shownNavigation(state) {
-      state.shownNavigation = !state.shownNavigation;
+    shownNavigation(state, action) {
+      console.log(action);
+      if (action.payload.type === "bar") {
+        state.shownNavigation = !action.payload.payload;
+      } else if (action.payload.type === "screen") {
+        state.shownNavigation = action.payload.payload;
+      }
     },
   },
 });

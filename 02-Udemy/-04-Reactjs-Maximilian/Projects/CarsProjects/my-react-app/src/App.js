@@ -11,7 +11,9 @@ import Footer from "./UI/Footer/Footer";
 import Cars from "./UI/Cars/Cars";
 import ErrorRouter from "./Components/Error/ErrorRouter";
 import SideList from "./Components/SideList/SideList";
+// import { LoaderStyled } from "./UI/AboutUs/LoaderStyled";
 function App() {
+  console.log(window.innerHeight);
   const router = createBrowserRouter([
     {
       path: "/",
@@ -32,6 +34,14 @@ function App() {
             <Footer />,
           ],
         },
+      ],
+    },
+    {
+      path: "/",
+      element: <Header specialHeader={"styledAs"} />,
+      errorElement: <ErrorRouter />,
+
+      children: [
         {
           path: "/about",
           element: <AboutUs />,

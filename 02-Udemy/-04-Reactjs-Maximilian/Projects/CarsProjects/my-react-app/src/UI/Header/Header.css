@@ -20,26 +20,38 @@
   /* background-color: white; */
 }
 
-.header-scrolled {
+.header-scrolled,
+.header-scrolledSpecial {
   background-color: white;
   color: #12273d;
   box-shadow: 5px 3px 20px rgba(black, 0.2);
 }
-.header-scrolled h1 {
+.header-scrolledSpecial {
+  position: relative;
+}
+.header-scrolled h1,
+.header-scrolledSpecial h1 {
   color: #12273d !important;
 }
-.header-scrolled a {
+.header-scrolled a,
+.header-scrolledSpecial a {
   color: #12273d !important;
 }
-.header-scrolled .card-number {
+.header-scrolled .card-number,
+.header-scrolledSpecial .card-number {
   background-color: #741906 !important;
 }
 .header-scrolled a:hover,
-.header-scrolled a.active {
+.header-scrolled a.active .header-scrolledSpecial a:hover,
+.header-scrolledSpecial a.active {
   color: white !important;
 }
-.header-scrolled .icon {
+.header-scrolled .icon,
+.header-scrolledSpecial .icon {
   color: #741906 !important;
+}
+.margin {
+  margin-bottom: 5rem;
 }
 
 .header h1 {
@@ -108,19 +120,33 @@ a {
 
   .header {
     background-color: white;
+    display: flex;
+    justify-content: space-between;
   }
   .header h1 {
     color: #12273d;
   }
   .nav .icon {
     color: #741906;
+    font-size: 5rem;
   }
   .header .card-number {
-    right: 10%;
-    top: 30%;
+    right: 18%;
+    top: 35%;
     background-color: #741906;
     font-size: 2rem;
     color: white;
+    padding: 1rem;
+  }
+  .nav .smallNavBar {
+    display: block;
+  }
+  .nav .smallNavBar a:hover,
+  .nav .smallNavBar a:active,
+  .nav .icon:hover,
+  .nav .icon:active {
+    border-radius: 0;
+    background-color: initial;
   }
 }
 /**************************/
@@ -147,6 +173,17 @@ a {
   .header .card-number {
     background-color: #741906;
     color: white;
+    right: 22%;
+  }
+  .nav .smallNavBar {
+    display: block;
+  }
+  .nav .smallNavBar a:hover,
+  .nav .smallNavBar a:active,
+  .nav .icon:hover,
+  .nav .icon:active {
+    border-radius: 0;
+    background-color: initial;
   }
 }
 /**************************/
@@ -192,4 +229,7 @@ a {
     border-radius: 0;
     background-color: initial;
   }
+  /* .nav .smallNavBar {
+    display: block;
+  } */
 }
