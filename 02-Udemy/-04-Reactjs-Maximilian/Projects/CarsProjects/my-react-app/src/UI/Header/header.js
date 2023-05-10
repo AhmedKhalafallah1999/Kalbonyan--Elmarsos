@@ -16,8 +16,10 @@ const Header = (props) => {
 
   window.onload = function () {
     const counter = JSON.parse(localStorage.getItem("counter"));
+    if (counter)
     counterDispatch(counterActions.initilize(counter));
     const ProductsData = JSON.parse(localStorage.getItem("DataArray"));
+    if (ProductsData)
     ProductsDispatch(carsDataActions.initilize(ProductsData));
     const showCart = JSON.parse(localStorage.getItem("CardShow"));
     ProductsDispatch(shownAction.initilize(showCart));

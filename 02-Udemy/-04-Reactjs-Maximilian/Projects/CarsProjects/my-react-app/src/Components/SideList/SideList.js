@@ -2,15 +2,26 @@ import "./SideList.css";
 import { RiDeleteBin5Line } from "react-icons/ri";
 import { useSelector, useDispatch } from "react-redux";
 import { carsDataActions, counterActions } from "../../Store/Store";
+// import { useEffect } from "react";
 const SideList = () => {
-
   const carsData = useSelector((state) => state.carsData.Data);
   const shownState = useSelector((state) => state.shownCard.case);
   const deleteDispatch = useDispatch();
+  const counterDispatch = useDispatch();
+  const carsDataDispatch = useDispatch();
+  // const DataSelector = useSelector((state) => state.carsData.Data);
   function deleteAllHandler() {
     deleteDispatch(carsDataActions.deleteAll());
     deleteDispatch(counterActions.rsetart());
   }
+
+  // useEffect(() => {
+  //   DataSelector.forEach((item) => {
+  //     const input_value = document.getElementById("cart" + item.name);
+  //     if (input_value) input_value.value = item.Amount;
+  //   });
+  // }, [DataSelector]);
+
   return (
     <>
       {shownState && (
@@ -22,9 +33,40 @@ const SideList = () => {
                   <h1 className="name-car">{item.name}</h1>
                   <p>{item.info}</p>
                   <div className="right-description">
-                    <button className="minus">-</button>
-                    <span>{item.Amount}</span>
-                    <button className="plus">+</button>
+                    <button
+                      className="minus"
+                      onClick={() => {
+                        counterDispatch(counterActions.decrement());
+                        carsDataDispatch(carsDataActions.decreament(index));
+                        // setAmount(index);
+                      }}
+                    >
+                      -
+                    </button>
+                    <input
+                      className="Amount"
+                      id={"cart" + item.id}
+                      value={0}
+                    />
+                    <button
+                      className="plus"
+                      onClick={() => {
+                        counterDispatch(counterActions.increament());
+                        carsDataDispatch(
+                          carsDataActions.increament({
+                            id: index,
+                            seats: item.seats,
+                            name: item.name,
+                            info: item.class,
+                            image: item.image,
+                            Amount: 1,
+                          })
+                        );
+                        // setAmount(index);
+                      }}
+                    >
+                      +
+                    </button>
 
                     <RiDeleteBin5Line
                       className="delete-icon"

@@ -32,11 +32,11 @@
   margin-top: 10%;
   /* display: block; */
   /* width: 50px; */
-  
 }
 .left-description {
   display: flex;
   flex-direction: column;
+  min-width: fit-content;
   height: fit-content;
 }
 .left-description .cat1,
@@ -51,8 +51,14 @@
   font-size: 4.4rem;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  /* gap: 1rem; */
+
 }
+
+.right-aligned {
+  justify-content: right;
+}
+
 .right-description .plus,
 .right-description .minus {
   background-color: #741906;
@@ -62,6 +68,9 @@
   /* height: 4.4rem; */
   font-size: 4rem;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .right-description .plus {
   border-top-right-radius: 1.2rem;
@@ -101,9 +110,16 @@
 .left {
   left: 5%;
 }
-.Amount{
+.Amount {
   border: none;
-  width: 5%;
+  width: 15%;
+  /* align-items: center; */
+  /* justify-content: center;
+   */
+   text-align: center;
+
+  /* font-size: 2rem; */
+  /* color: #741906; */
 }
 /**************************/
 /* Morw 1220px (Large Screen) */
@@ -144,5 +160,4 @@
     left: 5%;
     top: 50%;
   }
-  
 }

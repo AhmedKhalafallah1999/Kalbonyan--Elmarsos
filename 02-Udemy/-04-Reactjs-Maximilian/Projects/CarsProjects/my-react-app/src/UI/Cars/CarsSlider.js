@@ -26,8 +26,15 @@ const CarsSlider = () => {
   // const [updateAmount, setInput] = useState();
   useEffect(() => {
     DataSelector.forEach((item) => {
-      const input_value = document.getElementById("cart" + item.id);
-      input_value.value = item.Amount;
+      const input_value = document.querySelectorAll("#cart" + item.id);
+      // console.log(input_value);
+      if (input_value) {
+        input_value.forEach((y) => {
+          y.value = item.Amount;
+        });
+      } else {
+        item.value = 0;
+      }
     });
   }, [DataSelector]);
   // const setAmount = (index) => {};
@@ -81,7 +88,7 @@ const CarsSlider = () => {
                       <p>{item.luggage} Luggage</p>
                     </div>
                   </div>
-                  <div className="right-description">
+                  <div className="right-description right-aligned">
                     <button
                       className="minus"
                       onClick={() => {
@@ -92,12 +99,7 @@ const CarsSlider = () => {
                     >
                       -
                     </button>
-                    <input
-                      className="Amount"
-                      type="number"
-                      id={"cart" + index}
-                      value={0}
-                    />
+                    <input className="Amount" id={"cart" + index} value={0} />
                     <button
                       className="plus"
                       onClick={() => {

@@ -109,7 +109,7 @@ const shownSlice = createSlice({
       LocalStorage(state.case, "CardShow");
     },
     shownNavigation(state, action) {
-      console.log(action);
+      // console.log(action);
       if (action.payload.type === "bar") {
         state.shownNavigation = !action.payload.payload;
       } else if (action.payload.type === "screen") {
