@@ -10,7 +10,7 @@ import Logos from "./UI/Logos/Logos";
 import Footer from "./UI/Footer/Footer";
 import Cars from "./UI/Cars/Cars";
 import ErrorRouter from "./Components/Error/ErrorRouter";
-import SideList from "./Components/SideList/SideList";
+// import SideList from "./Components/SideList/SideList";
 // import { LocalStorage } from "./Store/LocalStorage";
 function App() {
   console.log(window.innerHeight);
@@ -25,7 +25,7 @@ function App() {
           path: "/",
           element: [
             <HeroSection></HeroSection>,
-            <SideList />,
+            // <SideList />,
             <AboutUs />,
             <Services></Services>,
             <Cars />,

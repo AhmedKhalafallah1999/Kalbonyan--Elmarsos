@@ -40,6 +40,16 @@
   }
 }
 /**************************/
+/* BELOW 1220px (Tablets) */
+/**************************/
+
+@media (min-width: 59em) and (max-width: 70em) {
+  .aboutUs-section img {
+    display: none;
+  }
+
+}
+/**************************/
 /* BELOW 704px (Smaller tablets) */
 /**************************/
 

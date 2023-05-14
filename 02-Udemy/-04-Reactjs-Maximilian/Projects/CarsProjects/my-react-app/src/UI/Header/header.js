@@ -16,11 +16,9 @@ const Header = (props) => {
 
   window.onload = function () {
     const counter = JSON.parse(localStorage.getItem("counter"));
-    if (counter)
-    counterDispatch(counterActions.initilize(counter));
+    if (counter) counterDispatch(counterActions.initilize(counter));
     const ProductsData = JSON.parse(localStorage.getItem("DataArray"));
-    if (ProductsData)
-    ProductsDispatch(carsDataActions.initilize(ProductsData));
+    if (ProductsData) ProductsDispatch(carsDataActions.initilize(ProductsData));
     const showCart = JSON.parse(localStorage.getItem("CardShow"));
     ProductsDispatch(shownAction.initilize(showCart));
   };
@@ -64,7 +62,9 @@ const Header = (props) => {
 
   window.addEventListener("scroll", changBackground);
   function handlerCard() {
-    shownDispatch(shownAction.shown());
+    // shownDispatch(shownAction.shown());
+    const SideBar = document.querySelector(".SideBar");
+    SideBar.classList.toggle("hidden");
   }
   function handlerNavigationCard() {
     shownDispatch(
@@ -130,7 +130,13 @@ const Header = (props) => {
             </NavLink>
           </li>
           <li>
-            <Link className="icon" to={"/"} onClick={handlerCard}>
+            <Link
+              className="icon"
+              onClick={(e) => {
+                e.preventDefault();
+                handlerCard();
+              }}
+            >
               <FiShoppingCart />
             </Link>
           </li>

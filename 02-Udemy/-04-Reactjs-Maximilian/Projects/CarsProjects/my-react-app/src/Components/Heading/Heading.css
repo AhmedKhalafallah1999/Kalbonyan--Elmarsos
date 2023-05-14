@@ -2,11 +2,14 @@
 .special-heading {
   /* background-color: #e5e5e5; */
   position: relative;
+  /* margin-top: 20rem; */
 }
 .special-heading h1 {
   font-family: "Lora", serif;
   font-size: 12.8rem;
-  font-weight: 700;
+  font-weight: 700; 
+  
+
 }
 .special-heading h5 {
   font-size: 5.6rem;
@@ -14,13 +17,18 @@
   position: absolute;
   top: 0;
 }
-.services h1,
+
 .cars h1 {
   text-align: center;
   color: #ccc;
 }
+.services h1{
+  color: white;
+  text-align: center;
+
+}
 .services h5 {
-  left: 40%;
+  left: 42%;
 }
 .cars h5 {
   left: 45%;
@@ -40,7 +48,7 @@
   width: 100%;
 }
 .aboutUs h5 {
-  left: 5%;
+  left: 2%;
   color: #741906;
 }
 /**************************/
@@ -146,5 +154,6 @@
   .testimonials h5 {
     color: white;
     font-size: 3rem;
+    z-index: 5;
   }
 }

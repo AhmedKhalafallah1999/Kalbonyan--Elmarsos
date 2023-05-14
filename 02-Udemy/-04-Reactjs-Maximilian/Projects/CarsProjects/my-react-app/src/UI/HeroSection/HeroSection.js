@@ -21,7 +21,7 @@ const HeroSection = () => {
           </p>
           <button>
             <a href="...">
-              Discover <BsArrowUpRight />
+              Discover <BsArrowUpRight className="sahm"/>
             </a>
           </button>
         </div>

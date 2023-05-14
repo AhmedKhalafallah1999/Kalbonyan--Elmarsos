@@ -3,17 +3,14 @@ import { BsPeopleFill } from "react-icons/bs";
 import { MdLuggage } from "react-icons/md";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import "./CarsSlider.css";
-// for slider component
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, A11y } from "swiper";
-// Import Swiper styles
 import "swiper/css";
 import "swiper/swiper.min.css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import TestimonialsData from "../../data.json";
-// for using dispatch and edit the storedata
 import { counterActions, carsDataActions } from "../../Store/Store";
 import { useDispatch, useSelector } from "react-redux";
 const CarsSlider = () => {
@@ -22,8 +19,6 @@ const CarsSlider = () => {
   const counterDispatch = useDispatch();
   const carsDataDispatch = useDispatch();
   const DataSelector = useSelector((state) => state.carsData.Data);
-  // const counterSelector = useSelector((state) => state.counter.counter);
-  // const [updateAmount, setInput] = useState();
   useEffect(() => {
     DataSelector.forEach((item) => {
       const input_value = document.querySelectorAll("#cart" + item.id);
@@ -36,8 +31,7 @@ const CarsSlider = () => {
         item.value = 0;
       }
     });
-  }, [DataSelector]);
-  // const setAmount = (index) => {};
+  }, [DataSelector, windowWidth]);
 
   useEffect(() => {
     const handleWindowResize = () => {

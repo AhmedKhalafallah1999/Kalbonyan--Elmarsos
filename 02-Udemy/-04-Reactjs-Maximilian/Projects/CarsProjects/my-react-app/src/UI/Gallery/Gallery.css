@@ -2,7 +2,9 @@
   max-width: 100%;
   width: 110%;
   position: relative;
-  margin-bottom: -6%;
+  margin-bottom: -4%;
+  /* height: 810px; */
+  margin-top: 5%;
 }
 .Gallery img {
   width: 50rem;

@@ -2,29 +2,34 @@ import "./SideList.css";
 import { RiDeleteBin5Line } from "react-icons/ri";
 import { useSelector, useDispatch } from "react-redux";
 import { carsDataActions, counterActions } from "../../Store/Store";
-// import { useEffect } from "react";
+import { useEffect, useState } from "react";
 const SideList = () => {
   const carsData = useSelector((state) => state.carsData.Data);
-  const shownState = useSelector((state) => state.shownCard.case);
+  // const shownState = useSelector((state) => state.shownCard.case);
+  const [v, setRen] = useState(0);
   const deleteDispatch = useDispatch();
   const counterDispatch = useDispatch();
   const carsDataDispatch = useDispatch();
-  // const DataSelector = useSelector((state) => state.carsData.Data);
+  const DataSelector = useSelector((state) => state.carsData.Data);
   function deleteAllHandler() {
     deleteDispatch(carsDataActions.deleteAll());
     deleteDispatch(counterActions.rsetart());
   }
 
-  // useEffect(() => {
-  //   DataSelector.forEach((item) => {
-  //     const input_value = document.getElementById("cart" + item.name);
-  //     if (input_value) input_value.value = item.Amount;
-  //   });
-  // }, [DataSelector]);
+  useEffect(() => {
+    DataSelector.forEach((item) => {
+      const input_value = document.getElementById("cart" + item.name);
+      if (input_value){ 
+        input_value.value = item.Amount;
+        setRen(item.Amount);
+      }
+    });
+   
+  }, [DataSelector]);
 
   return (
     <>
-      {shownState && (
+      {  (
         <div className="SideBar">
           {carsData.map((item, index) => {
             return (
@@ -37,17 +42,13 @@ const SideList = () => {
                       className="minus"
                       onClick={() => {
                         counterDispatch(counterActions.decrement());
-                        carsDataDispatch(carsDataActions.decreament(index));
+                        carsDataDispatch(carsDataActions.decreamentItemFromSide(item.name));
                         // setAmount(index);
                       }}
                     >
                       -
                     </button>
-                    <input
-                      className="Amount"
-                      id={"cart" + item.id}
-                      value={0}
-                    />
+                    <input className="Amount" id={"cart" + item.id} value={v} />
                     <button
                       className="plus"
                       onClick={() => {

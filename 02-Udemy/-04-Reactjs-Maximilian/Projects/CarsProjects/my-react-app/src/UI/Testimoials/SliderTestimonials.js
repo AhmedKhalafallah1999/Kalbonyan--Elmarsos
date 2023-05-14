@@ -26,11 +26,11 @@ const SliderTestimonials = () => {
                 <>
                   <p>{item.description}</p>
                   <div>
-                    <AiOutlineStar></AiOutlineStar>
-                    <AiOutlineStar></AiOutlineStar>
-                    <AiOutlineStar></AiOutlineStar>
-                    <AiOutlineStar></AiOutlineStar>
-                    <AiOutlineStar></AiOutlineStar>
+                    <AiOutlineStar className="star"></AiOutlineStar>
+                    <AiOutlineStar className="star"></AiOutlineStar>
+                    <AiOutlineStar className="star"></AiOutlineStar>
+                    <AiOutlineStar className="star"></AiOutlineStar>
+                    <AiOutlineStar className="star"></AiOutlineStar>
                   </div>
                   <div className="signiture">
                     <h1>{item.name}</h1>
