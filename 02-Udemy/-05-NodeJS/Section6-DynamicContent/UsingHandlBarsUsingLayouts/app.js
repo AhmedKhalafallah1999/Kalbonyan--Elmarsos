@@ -2,9 +2,22 @@ const path = require("path");
 
 const express = require("express");
 const bodyParser = require("body-parser");
+// for using template engine of handlebars engine by imported
+const expressHbs = require("express-handlebars");
+
 const app = express();
-// for using template engine of pug engine
-app.set("view engine", "pug");
+
+// for using template engine of handlebars engine by added as it's not a built in function
+app.engine(
+  "handlebars",
+  expressHbs({
+    layoutDir: "views/layouts",
+    defaultLayout: "main-layout",
+    extname: "handlebars",
+  })
+);
+// for using template engine of handlebars engine
+app.set("view engine", "handlebars");
 // to go to the views to use these template
 app.set("views", "views");
 

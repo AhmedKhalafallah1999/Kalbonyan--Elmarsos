@@ -16,7 +16,11 @@ router.get("/", (req, res, next) => {
     pageTitle: "shop",
     path: "/",
     hasProducts: products.length > 0,
+    activeShop: true,
+    productCSS: true,
+    
   });
+  
 });
 
 module.exports = router;
