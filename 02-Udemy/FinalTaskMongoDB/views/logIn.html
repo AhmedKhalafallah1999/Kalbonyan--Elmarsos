@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In</title>
+    <link rel="stylesheet" href="/header.css" />
+    <link rel="stylesheet" href="/logIn.css"  />
+  </head>
+  <body>
+<header>
+      <div class="header">
+        <div class="left-section">
+          <img class="logo-header" src="./logoRed.png" alt="logo" />
+          <h1 class="logo-header">Your Notes</h1>
+        </div>
+        <div class="right-section">
+          <h3>Ar</h3>
+          <img src="./Combined Shape.png" alt="moon" />
+          <img src="./user.png" alt="user" />
+        </div>
+      </div>
+    </header>
+    
+    <main>
+      <div class="logIn">
+        <h1>Log In</h1>
+        <form action="/login" method="POST">
+          <div>
+            <label>Email</label>
+            <input type="email"></input>
+          </div>
+          <div>
+            <label>Password</label>
+            <input type="password"></input>
+          </div>
+  
+          <button class="logInBtn" type="submit">LogIn</button>
+  
+          
+        </form>
+        <div class="alternative">
+          <p>Don't have an account!</p>
+          <form action="/signup" method="POST">
+          <button type="submit">Sign Up</button>
+        </form>
+        </div>
+     
+      </div>
+    </main>
+  </body>
+</html>

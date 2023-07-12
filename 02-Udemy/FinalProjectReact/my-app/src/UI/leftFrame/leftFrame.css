@@ -1,0 +1,12 @@
+.left {
+  height: 600px;
+  width: 491px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-image: url('./Rectangle\ 1.png') ; */
+  /* background-repeat: no-repeat; */
+  color: white;
+  background-color: #d375b9;
+}

@@ -1,0 +1,86 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 0 50px;
+  /* width: 1444px; */
+  height: 62px;
+  box-shadow: 0px 1px 10px #d8d5d5;
+}
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.logo-header {
+  color: #d375b9;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.right-section h3 {
+  color: #d375b9;
+  font-size: 36px;
+  cursor: pointer;
+}
+img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.landingPage {
+  background-image: url("./Bitmap.jpg");
+  width: 100%;
+  height: 266px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.tasks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tasks .addTask {
+  position: absolute;
+  top: 30%;
+  left: 32%;
+}
+.tasks input {
+  border: none;
+  outline: none;
+}
+.tasks button {
+  border: none;
+  width: 200px;
+  height: 32px;
+  margin-top: 5px;
+  background-color: white;
+  box-shadow: 0px 1px 10px #d8d5d5;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.tasks div,
+.tasks input {
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 1px 10px #d8d5d5;
+  width: 540px;
+  height: 64px;
+  border-radius: 10px;
+}
+.singleTask {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+.close {
+  height: 18.22px;
+  width: 18.21px;
+}
