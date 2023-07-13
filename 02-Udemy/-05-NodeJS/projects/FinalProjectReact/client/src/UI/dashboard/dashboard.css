@@ -1,0 +1,273 @@
+.landingPage {
+  background-image: url("../../../public/Bitmap.jpg");
+  width: 100%;
+  height: 266px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.tasks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 20%;
+  left: 32%;
+  /* background-color: #FAFAFA; */
+}
+.tasks {
+  margin-bottom: 30px;
+}
+.addTask {
+  margin-bottom: 20px;
+}
+.tasks input {
+  border: none;
+  outline: none;
+  border-radius: 8px;
+}
+.addTask span {
+  position: fixed;
+  top: 23%;
+  right: 35%;
+  background-color: #d375b9;
+  cursor: pointer;
+  font-size: 18px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: white;
+}
+.tasks button {
+  border: none;
+  width: 200px;
+  height: 32px;
+  margin-top: 5px;
+  background-color: white;
+  box-shadow: 0px 1px 10px #d8d5d5;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.singleTask,
+.control,
+.tasks input {
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 1px 10px #d8d5d5;
+  width: 540px;
+  height: 64px;
+}
+.control .status span {
+  cursor: pointer;
+}
+.link {
+  color: #e94cbd;
+}
+.link {
+  text-decoration: none;
+}
+
+.singleTask,
+.control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+.first {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.radioWithTask {
+  display: flex;
+  gap: 25px;
+}
+.radioBtn {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  /* background-color: #d375b9; */
+  border: 1px #7c8495 solid;
+}
+.task {
+  font-size: 18px;
+}
+.closeTask {
+  /* height: 18.22px; */
+  /* width: 18.21px; */
+  font-size: 24px;
+  color: #7c8495;
+  font-weight: 300;
+}
+.control {
+  display: flex;
+  justify-content: space-between;
+  color: #7c8495;
+  font-size: 14px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.control .status {
+  display: flex;
+  gap: 16px;
+}
+.control div{
+  cursor: pointer;
+}
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 231px;
+  width: 263px;
+  position: absolute;
+  top: 15%;
+  right: 4%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 1px 10px #d8d5d5;
+  box-sizing: border-box;
+  gap: 15px;
+}
+.RTL{
+  left: 10%;
+}
+.user-info p {
+  color: #d375b9;
+  font-weight: 600;
+}
+.user-info button {
+  height: 36px;
+  width: 246px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+.user-info .modify {
+  background-color: #7c8495;
+  border: none;
+}
+.user-info .logOut {
+  background-color: #d375b9;
+  border: none;
+}
+.check {
+  background-color: #d375b9;
+  background-image: url("../../../public/check.png");
+}
+.dashed {
+  text-decoration: line-through;
+}
+/* Dark Them */
+.darkButton input,
+.darkButton .singleTask,
+.darkButton .control {
+  background-color: #25273d;
+  box-shadow: none;
+}
+.darkButton .singleTask {
+  border-bottom: 0.8px solid #979797;
+}
+.darkButton input::placeholder,
+.darkButton .singleTask,
+.darkButton .control {
+  color: white;
+}
+.darkThemeInfo {
+  background-color: #241229;
+}
+.darkThemeInfo .modify {
+  background-color: white;
+  color: black;
+}
+.darkThemeInfo label {
+  color: white;
+}
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (min-width: 40em) and (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+  .tasks {
+    width: 600px;
+    left: 10%;
+  }
+  .tasks .singleTask,
+  .tasks .addTask input,
+  .tasks .control {
+    height: 48px;
+    width: 500px;
+  }
+  .control {
+    font-size: 8px;
+  }
+}
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (min-width: 30em) and (max-width: 40em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  .tasks {
+    width: 400px;
+    left: 10%;
+  }
+  .tasks .singleTask,
+  .tasks .addTask input,
+  .tasks .control {
+    height: 48px;
+    width: 400px;
+  }
+  .control {
+    font-size: 12px;
+  }
+}
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 30em) {
+  .landingPage {
+    width: 415px;
+    height: 266px;
+  }
+  .tasks {
+    width: 300px;
+    left: 10%;
+  }
+  .tasks .singleTask,
+  .tasks .addTask input,
+  .tasks .control {
+    height: 48px;
+    width: 327px;
+  }
+  .control {
+    font-size: 8px;
+  }
+  .user-info {
+    width: 375px;
+    top: 50%;
+  }
+  .addTask span {
+    top: 20%;
+    right: 24%;
+  }
+}

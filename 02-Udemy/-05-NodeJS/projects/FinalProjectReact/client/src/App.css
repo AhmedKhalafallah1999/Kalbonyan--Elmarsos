@@ -1,0 +1,16 @@
+body {
+  background-color: #fafafa;
+  /* background-color: #241229; */
+  /* background-image: url('../public/screen.png'); */
+}
+/* .App{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  flex-direction: column;
+
+} */
+.darkColor{
+  background-color: #241229;
+}
