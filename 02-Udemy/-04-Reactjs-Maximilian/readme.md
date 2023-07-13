@@ -129,5 +129,5 @@
 
 [Course-Link](https://www.udemy.com/course/react-the-complete-guide-incl-redux/)<br>
 
-![Certificate](https://drive.google.com/file/d/1QO0SvGKMN-IrlG5rgzkrwZhWGscqRnNh/view)
+[Certificate](https://drive.google.com/file/d/1QO0SvGKMN-IrlG5rgzkrwZhWGscqRnNh/view)
 <br>
