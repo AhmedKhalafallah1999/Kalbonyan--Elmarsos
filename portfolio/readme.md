@@ -2,7 +2,7 @@
 
 responsive portfolio using react js and tailwind css
 
-live preview : https://iridescent-swan-4c50e3.netlify.app/
+live preview :https://luminous-dango-993d39.netlify.app/
 
 1.npm i
 2.npm run dev
