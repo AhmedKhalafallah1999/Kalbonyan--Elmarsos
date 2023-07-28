@@ -43,7 +43,7 @@ Kalbonyan Elmarsos is an Egyptian non-profit organization whose goal is to help 
 - ## LEARN HTML, CSS, and GitHub
   ![100%](https://progress-bar.dev/0/?title=Done)
   - [100%] ` completed` `37h 30m` - 01 - [Build Responsive Real-World Websites with HTML and CSS]()
-  - [100% ` Completed` `4h` - 02 - [Git: Become an Expert in Git & GitHub]()
+  - [100%] ` Completed` `4h` - 02 - [Git: Become an Expert in Git & GitHub]()
     <br />
 
 <img src="https://img.shields.io/badge/Total%20Number%20Of%20Hours%20For%20This%20Courses-31h301m-blue">
@@ -52,10 +52,10 @@ Kalbonyan Elmarsos is an Egyptian non-profit organization whose goal is to help 
 
 # LEARN JAVASCRIPT
 
-![0%](https://progress-bar.dev/0/?title=Done)
+![100%](https://progress-bar.dev/0/?title=Done)
 
-- [100% ] ` completed` `52h 32m` - 01 - [ JavaScript - The Complete Guide 2023 (Beginner + Advanced) ]()
-- [ 100%] ` completed` `16h 7m` - 02 - [20 Web Projects with vanilla JavaScript]()
+- [100%] ` completed` `52h 32m` - 01 - [ JavaScript - The Complete Guide 2023 (Beginner + Advanced) ]()
+- [100%] ` completed` `16h 7m` - 02 - [20 Web Projects with vanilla JavaScript]()
   <br />
 
 <img src="https://img.shields.io/badge/Total%20Number%20Of%20Hours%20For%20This%20Courses-68h39m-blue">
@@ -68,7 +68,7 @@ Kalbonyan Elmarsos is an Egyptian non-profit organization whose goal is to help 
 
 - ## ReactJs
 
-- [100% ] `completed` `48h` - 14 - [React - The Complete Guide (incl Hooks, React Router, Redux)]()
+- [100%] `completed` `48h` - 14 - [React - The Complete Guide (incl Hooks, React Router, Redux)]()
 
 - ## NodeJs
 
@@ -97,7 +97,7 @@ Kalbonyan Elmarsos is an Egyptian non-profit organization whose goal is to help 
 <br />
 # Projects
 
-![0%](https://progress-bar.dev/0/?title=Done)
+![100%](https://progress-bar.dev/0/?title=Done)
 |status| Project | Technologies | Repository | Demo |
 | --- | -------- | ------------ | --------------------------------------------- | ---- |
 | [100%] | Project 1| HTML CSS | [Appie](https://github.com/AhmedKhalafallah1999/Appie-Website-1st) | [Demo](https://peppy-hamster-53a031.netlify.app/) |
