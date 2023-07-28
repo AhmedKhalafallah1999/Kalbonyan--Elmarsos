@@ -1,0 +1,253 @@
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  height: 10rem;
+  z-index: 10;
+  background-color: white;
+  background: transparent;
+}
+
+.header-scrolled,
+.header-scrolledSpecial {
+  background-color: white;
+  box-shadow: 5px 3px 20px rgba(black, 0.2);
+}
+.header-scrolled h1,
+.header-scrolledSpecial h1 {
+  color: #12273d !important;
+}
+.header-scrolled a,
+.header-scrolledSpecial a {
+  color: #12273d !important;
+}
+.header-scrolled a:hover,
+.header-scrolled a.active,
+.header-scrolledSpecial a:hover,
+.header-scrolledSpecial a:active {
+  color: white !important;
+  /* font-size: 5rem; */
+}
+
+.header-scrolled .card-number,
+.header-scrolledSpecial .card-number {
+  background-color: #741906 !important;
+}
+.header-scrolled .icon,
+.header-scrolledSpecial .icon {
+  color: #741906 !important;
+}
+.margin {
+  margin-bottom: 5rem;
+}
+
+.header h1 {
+  font-weight: 800;
+  font-size: 4.2rem;
+  color: white;
+  font-family: "Lora", serif;
+}
+.header span {
+  font-weight: 500;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  font-family: "Noto Sans", sans-serif;
+}
+.nav .smallNavBar {
+  display: none;
+}
+
+a {
+  /* color: #12273D; */
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.nav a:hover,
+.nav a:active {
+  background-color: #741906;
+  border-radius: 1.2rem;
+}
+.header a.active {
+  color: white !important;
+}
+
+.icon {
+  width: 8rem;
+  height: 8rem;
+  position: relative;
+}
+.header .card-number {
+  position: absolute;
+  background-color: rgba(255, 247, 0, 0.829);
+  height: 3rem;
+  width: 2.5rem;
+  right: 10%;
+  top: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+
+.header-scrolledSpecial .card-number,
+.header-scrolled .card-number {
+  color: white;
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (min-width: 44em) and (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+  .nav .link {
+    display: none;
+  }
+
+  .header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header h1 {
+    color: #12273d;
+  }
+  .nav .icon {
+    color: #741906;
+    font-size: 5rem;
+  }
+  .header .card-number {
+    right: 17%;
+    top: 35%;
+    background-color: #1f2430;
+    font-size: 2rem;
+    color: white;
+    padding: 1rem;
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+  .nav .smallNavBar {
+    display: block;
+  }
+  .nav .icon {
+    color: #1f2430;
+    font-size: 4.4rem;
+  }
+
+  .nav .smallNavBar a:hover,
+  .nav .smallNavBar a:active,
+  .nav .icon:hover,
+  .nav .icon:active {
+    border-radius: 0;
+    background-color: initial;
+  }
+}
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (min-width: 34em) and (max-width: 44em) {
+  .header {
+    height: 8rem;
+  }
+
+  .nav .link {
+    display: none;
+  }
+  .header {
+    background-color: white;
+  }
+  .header h1 {
+    color: #12273d;
+  }
+  .header .card-number {
+    background-color: #1f2430;
+    color: white;
+    right: 24%;
+  }
+  .nav .smallNavBar {
+    display: block;
+  }
+  .nav .icon {
+    color: #1f2430;
+    font-size: 3.4rem;
+  }
+
+  .nav .smallNavBar a:hover,
+  .nav .smallNavBar a:active,
+  .nav .icon:hover,
+  .nav .icon:active {
+    border-radius: 0;
+    background-color: initial;
+  }
+}
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .header {
+    height: 8rem;
+  }
+  .nav .link {
+    display: none;
+  }
+  .header {
+    background-color: white;
+  }
+  .header h1 {
+    color: #12273d;
+  }
+  .nav .icon {
+    color: #741906;
+  }
+  .header .card-number {
+    height: 2rem;
+    width: 2rem;
+  }
+  .header .card-number {
+    right: 24%;
+    top: 30%;
+    background-color: #1f2430;
+    font-size: 1.6rem;
+    color: white;
+  }
+
+  .nav .smallNavBar {
+    display: block;
+    font-size: 2.4rem;
+  }
+  .nav .icon {
+    color: #1f2430;
+  }
+  .nav .smallNavBar a:hover,
+  .nav .smallNavBar a:active,
+  .nav .icon:hover,
+  .nav .icon:active {
+    border-radius: 0;
+    background-color: initial;
+  }
+  /* .nav .smallNavBar {
+    display: block;
+  } */
+}

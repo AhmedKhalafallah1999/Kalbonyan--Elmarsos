@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap");
+.special-heading {
+  /* background-color: #e5e5e5; */
+  position: relative;
+  /* margin-top: 20rem; */
+}
+.special-heading h1 {
+  font-family: "Lora", serif;
+  font-size: 12.8rem;
+  font-weight: 700; 
+  
+
+}
+.special-heading h5 {
+  font-size: 5.6rem;
+  font-family: "Lora", serif;
+  position: absolute;
+  top: 0;
+}
+
+.cars h1 {
+  text-align: center;
+  color: #ccc;
+}
+.services h1{
+  color: white;
+  text-align: center;
+
+}
+.services h5 {
+  left: 42%;
+}
+.cars h5 {
+  left: 45%;
+}
+.testimonials h1 {
+  text-align: center;
+  color: #ccc;
+  opacity: 0.3;
+}
+.testimonials h5 {
+  left: 40%;
+  color: white;
+}
+.aboutUs h1 {
+  color: #ccc;
+  /* font-size: 1rem; */
+  width: 100%;
+}
+.aboutUs h5 {
+  left: 2%;
+  color: #741906;
+}
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (min-width: 44em) and (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+  .aboutUs h1,
+  .services h1,
+  .testimonials h1,
+  .cars h1 {
+    color: #ccc;
+    font-size: 12rem;
+  }
+  .testimonials h1 {
+    font-size: 6rem;
+  }
+  .aboutUs h5,
+  .services h5,
+  .cars h5 {
+    position: initial;
+    text-align: center;
+    margin-top: -15rem;
+  }
+  .aboutUs h5 {
+    color: #741906;
+  }
+  .services h5,
+  .cars h5 {
+    color: black;
+  }
+  .testimonials h5 {
+    color: white;
+    font-size: 3rem;
+  }
+}
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (min-width: 34em) and (max-width: 44em) {
+  .aboutUs h1,
+  .services h1,
+  .cars h1,
+  .testimonials h1 {
+    color: #ccc;
+    font-size: 7rem;
+  }
+  .testimonials h1 {
+    font-size: 6rem;
+  }
+  .aboutUs h5,
+  .services h5,
+  .cars h5 {
+    position: initial;
+    text-align: center;
+    margin-top: -10rem;
+  }
+  .aboutUs h5 {
+    color: #741906;
+  }
+  .services h5,
+  .cars h5 {
+    color: black;
+  }
+  .testimonials h5 {
+    color: white;
+    font-size: 3rem;
+  }
+}
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .aboutUs h1,
+  .services h1,
+  .cars h1 .testimonials h1 {
+    color: #ccc;
+    font-size: 7rem;
+  }
+  .testimonials h1 {
+    font-size: 6rem;
+  }
+  .aboutUs h5,
+  .services h5,
+  .cars h5 {
+    position: initial;
+    text-align: center;
+    margin-top: -10rem;
+  }
+  .aboutUs h5 {
+    color: #741906;
+  }
+  .services h5,
+  .cars h5 {
+    color: black;
+  }
+  .testimonials h5 {
+    color: white;
+    font-size: 3rem;
+    z-index: 5;
+  }
+}

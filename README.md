@@ -1,4 +1,5 @@
 # Kalbonyan-Elmarsos
+
 # About Kalbonyan Elmarsos
 
 Kalbonyan Elmarsos is an Egyptian non-profit organization whose goal is to help students become better developers and be able to deal and succeed with the global labor market and compete in it with strength and efficiency.
@@ -33,7 +34,7 @@ Kalbonyan Elmarsos is an Egyptian non-profit organization whose goal is to help 
 
   - [100%] ` Completed` ` 2h 6m 40s` - 01 - [Programming Foundations: Fundamentals](01-Linkedin-Learning/-01-Programming-Foundation-Fundamentals/)
   - [100%] ` Completed` ` 2h 4m 44s` - 02 - [Programming Foundations: Beyond the Fundamentals](01-Linkedin-Learning/-02-Programming-Foundations-Beyond-Fundamentals)
-        <br />
+    <br />
 
 <img src="https://img.shields.io/badge/Total%20Number%20Of%20Hours%20For%20This%20Courses-4h11m-blue">
 
@@ -43,12 +44,11 @@ Kalbonyan Elmarsos is an Egyptian non-profit organization whose goal is to help 
   ![100%](https://progress-bar.dev/0/?title=Done)
   - [100%] ` completed` `37h 30m` - 01 - [Build Responsive Real-World Websites with HTML and CSS]()
   - [100% ` Completed` `4h` - 02 - [Git: Become an Expert in Git & GitHub]()
-        <br />
+    <br />
 
 <img src="https://img.shields.io/badge/Total%20Number%20Of%20Hours%20For%20This%20Courses-31h301m-blue">
 <!-- MERN -->
   <span id="js"></span>
-
 
 # LEARN JAVASCRIPT
 
@@ -56,7 +56,7 @@ Kalbonyan Elmarsos is an Egyptian non-profit organization whose goal is to help 
 
 - [100% ] ` completed` `52h 32m` - 01 - [ JavaScript - The Complete Guide 2023 (Beginner + Advanced) ]()
 - [ 100%] ` completed` `16h 7m` - 02 - [20 Web Projects with vanilla JavaScript]()
-      <br />
+  <br />
 
 <img src="https://img.shields.io/badge/Total%20Number%20Of%20Hours%20For%20This%20Courses-68h39m-blue">
 
@@ -77,7 +77,7 @@ Kalbonyan Elmarsos is an Egyptian non-profit organization whose goal is to help 
 - ## Mern
 
 - [100%] `completed` `20h 32m` - 15 - [MERN Stack Course 2022 - MongoDB, Express, React and NodeJS]()
-      <br />
+  <br />
 
 <img src="https://img.shields.io/badge/Total%20Number%20Of%20Hours%20For%20This%20Courses-109h1m-blue">
 
@@ -95,3 +95,12 @@ Kalbonyan Elmarsos is an Egyptian non-profit organization whose goal is to help 
 
 <img src="https://img.shields.io/badge/Total%20Number%20Of%20Hours%20For%20This%20Courses-20h39m-blue">
 <br />
+# Projects
+
+![0%](https://progress-bar.dev/0/?title=Done)
+|status| Project | Technologies | Repository | Demo |
+| --- | -------- | ------------ | --------------------------------------------- | ---- |
+| [100%] | Project 1| HTML CSS | [Appie](https://github.com/AhmedKhalafallah1999/Appie-Website-1st) | [Demo](https://peppy-hamster-53a031.netlify.app/) |
+| [100%] | Project 2| HTML CSS JS | [Kanban Board](https://github.com/AhmedKhalafallah1999/To-Do-List)| [Demo](https://ahmedkhalafallah1999.github.io/To-Do-List/) |
+| [100%] | Project 3| React js | [Car Agency](https://github.com/AhmedKhalafallah1999/carsProjectTask) | [Demo](https://cars-ecommerce-3dc95.web.app/) |
+| [100%] | Project 4| MERN | [Note App](https://github.com/AhmedKhalafallah1999/MernStackToDoTask) | [Demo](https://kalbonyan-final.onrender.com/) |

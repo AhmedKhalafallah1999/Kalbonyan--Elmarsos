@@ -1,0 +1,112 @@
+.services-section {
+  background-image: url("./services.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 84rem;
+  background-color: #dfdfdf;
+}
+.services-card {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  height: 41rem;
+}
+.services-section h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.services-section p {
+  font-size: 2rem;
+  width: 35rem;
+}
+/**************************/
+/* BELOW 1220px (Tablets) */
+/**************************/
+@media (min-width: 59em) and (max-width: 90em) {
+  .services-section {
+    height: fit-content;
+    /* width: fit-content; */
+    justify-content: center;
+  }
+  .services-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    text-align: center;
+    height: fit-content;
+  }
+  .services-card div {
+    width: fit-content;
+  }
+  .services-section h2 {
+    font-size: 3rem;
+  }
+  .services-section p {
+    font-size: 1.8rem;
+    text-align: center;
+    /* width: 40rem; */
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (min-width: 44em) and (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+  .services-section {
+    height: 100%;
+  }
+  .services-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    text-align: center;
+    height: fit-content;
+  }
+  .services-section h2 {
+    font-size: 5rem;
+  }
+  .services-section p {
+    font-size: 3rem;
+    text-align: center;
+    /* width: 40rem; */
+  }
+}
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (min-width: 34em) and (max-width: 44em) {
+  .services-section {
+    height: 100%;
+  }
+  .services-card {
+    display: flex;
+    gap: 3.6rem;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: fit-content;
+  }
+}
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .services-section {
+    height: 100%;
+  }
+  .services-card {
+    display: flex;
+    gap: 3.6rem;
+    flex-direction: column;
+    text-align: center;
+    height: fit-content;
+  }
+}

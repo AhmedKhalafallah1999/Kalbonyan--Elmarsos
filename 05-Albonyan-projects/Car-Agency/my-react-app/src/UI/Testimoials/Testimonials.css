@@ -1,0 +1,207 @@
+.testimonials-section {
+  background-color: #12273d;
+  height: 87.6rem;
+  position: relative;
+}
+.dataFetching {
+  background-color: white;
+  position: relative;
+  width: 846px;
+  text-align: center;
+  margin: auto;
+  padding: 2rem;
+}
+.dataFetching p {
+  padding: 0px 15rem;
+  font-size: 2rem;
+  height: 17.8rem;
+  width: 60.1rem;
+}
+.dataFetching .signiture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+}
+.dataFetching .signiture span {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #ccc;
+}
+.dataFetching .signiture img {
+  position: absolute;
+  right: -10%;
+  bottom: -10%;
+  max-width: 200px;
+  width: 10.4rem;
+  height: 6.9rem;
+}
+/* For Slider */
+.slider {
+  display: flex;
+}
+.dataFetching.none {
+  display: none;
+}
+.dataFetching.visible {
+  display: block;
+}
+/* For Pointers */
+.pointers {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 15%;
+  left: 40%;
+}
+.pointer {
+  border-radius: 50%;
+  height: 1.8rem;
+  width: 1.8rem;
+  background-color: white;
+  margin: 3rem;
+}
+.pointer.active {
+  background-color: aqua;
+}
+.star {
+  font-size: 4rem;
+  fill: #ebd8b8;
+  /* background: #fff600; */
+  /* color: yellowgreen; */
+}
+/**************************/
+/* BELOW 1220px (Tablets) */
+/**************************/
+
+@media (min-width: 59em) and (max-width: 70em) {
+  .testimonials-section {
+    height: 80vh;
+  }
+
+  .pointers {
+    left: 35%;
+    bottom: 5%;
+  }
+  .dataFetching .signiture img {
+    right: -4%;
+  }
+  
+  
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (min-width: 44em) and (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+  .pointers {
+    left: 35%;
+    bottom: 5%;
+  }
+  .testimonials-section {
+    height: 63.4rem;
+  }
+  .dataFetching {
+    margin: auto;
+    width: 70rem;
+  }
+  .dataFetching p {
+    margin: 0 auto;
+    padding: 2rem;
+    font-size: 2.4rem;
+    height: 17.8rem;
+    /* width: 22rem; */
+  }
+  /* For Pointers */
+  .pointer {
+    margin: 3rem;
+   
+  }
+  .star {
+    font-size: 4rem;
+  }
+
+
+}
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (min-width: 34em) and (max-width: 44em) {
+  .testimonials-section {
+    height: 63.4rem;
+  }
+  .pointers {
+    left: 18%;
+    bottom: 4%;
+  }
+  .dataFetching {
+    width: 32.3rem;
+    height: 35.1rem;
+    margin: auto;
+    padding: 2rem;
+  }
+  .dataFetching p {
+    margin: 0 auto;
+    padding: 2rem;
+    font-size: 1.4rem;
+    height: 17.8rem;
+    width: 22rem;
+  }
+  /* For Pointers */
+  .pointer {
+    margin: 3rem;
+   
+  }
+  .star {
+    font-size: 3.4rem;
+  }
+}
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .testimonials-section {
+    height: 63.4rem;
+  }
+  
+  .dataFetching p {
+    padding: 0rem;
+    /* margin: 1rem; */
+  }
+  .dataFetching .signiture {
+    flex-direction: column;
+    gap: 0;
+  }
+  .pointers {
+    left: 18%;
+    bottom: 4%;
+  }
+  .dataFetching {
+    width: 32.3rem;
+    height: 35.1rem;
+    margin: auto;
+    padding: 2rem;
+  }
+  .dataFetching p {
+    margin: 0 auto;
+    padding: 2rem;
+    font-size: 1.4rem;
+    height: 17.8rem;
+    width: 22rem;
+  }
+  /* For Pointers */
+  .pointer {
+    margin: 3rem;
+   
+  }
+  .star {
+    font-size: 3.4rem;
+  }
+}
